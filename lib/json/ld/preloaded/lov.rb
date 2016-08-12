@@ -487,6 +487,7 @@ class JSON::LD::Context
       "stac" => TermDefinition.new("stac", id: "http://securitytoolbox.appspot.com/stac#", simple: true),
       "step" => TermDefinition.new("step", id: "http://purl.org/net/step#", simple: true),
       "stories" => TermDefinition.new("stories", id: "http://purl.org/ontology/stories/", simple: true),
+      "summa" => TermDefinition.new("summa", id: "http://purl.org/voc/summa/", simple: true),
       "swc" => TermDefinition.new("swc", id: "http://data.semanticweb.org/ns/swc/ontology#", simple: true),
       "swp" => TermDefinition.new("swp", id: "http://www.w3.org/2004/03/trix/swp-1/", simple: true),
       "swpm" => TermDefinition.new("swpm", id: "http://spi-fm.uca.es/spdef/models/deployment/swpm/1.0#", simple: true),

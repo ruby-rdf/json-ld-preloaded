@@ -19,17 +19,16 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
 * [LDP](http://www.w3.org/2012/ldp/wiki/Main_Page)
  * [work in progress](http://lists.w3.org/Archives/Public/public-linked-json/2014Jul/0050.html)
 * [ActivityStreams 2.0](http://activitystrea.ms)
- * [activitystreams.jsonld](https://github.com/jasnell/activitystreams.jsonld/blob/master/activitystreams.jsonld)
- * [actions.jsonld](https://github.com/jasnell/activitystreams.jsonld/blob/master/actions.jsonld)
+ *  http://asjsonld.mybluemix.net/
 * Open Badges (OBI)
- * http://standard.openbadges.org/1.1/context.json
+ * https://openbadgespec.org/v1/context.json
  * issues: https://github.com/openbadges/openbadges-specification/issues
 * [vCard Ontology](http://www.w3.org/TR/vcard-rdf/)
  * http://www.w3.org/2006/vcard/ns (needs content negotiation)
 * [FOAF](http://xmlns.com/foaf/spec/)
  * http://xmlns.com/foaf/context
 * [GeoJSON-LD](https://github.com/geojson/geojson-ld)
- * https://github.com/geojson/geojson-ld/tree/master/contexts
+ * https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld
 * [IIIF Image API](http://iiif.io/api/image/2/)
  * http://iiif.io/api/image/2/context.json
 * [IIIF Presentation API](http://iiif.io/api/presentation/2/)

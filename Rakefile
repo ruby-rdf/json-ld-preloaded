@@ -41,7 +41,7 @@ task :gen_contexts => CONTEXTS.keys.map {|v| "lib/json/ld/preloaded/#{v}.rb"} do
   # Update preloaded.rb to load each context file
   preloaded = File.read("lib/json/ld/preloaded.rb").sub(/(\A.*# Require individual context files here\n).*\Z/m, '\1')
   CONTEXTS.keys.each do |id|
-    preloaded += %(load "lib/json/ld/preloaded/#{id}.rb"\n)
+    preloaded += %(load "json/ld/preloaded/#{id}.rb"\n)
   end
   File.write("lib/json/ld/preloaded.rb", preloaded)
 end
