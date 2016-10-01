@@ -5,7 +5,6 @@ require 'json/ld'
 class JSON::LD::Context
   add_preloaded("https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld") do
     new(term_definitions: {
-      "geojson" => TermDefinition.new("geojson", id: "http://ld.geojson.org/vocab#", simple: true),
       "Feature" => TermDefinition.new("Feature", id: "http://ld.geojson.org/vocab#Feature", simple: true),
       "FeatureCollection" => TermDefinition.new("FeatureCollection", id: "http://ld.geojson.org/vocab#FeatureCollection", simple: true),
       "GeometryCollection" => TermDefinition.new("GeometryCollection", id: "http://ld.geojson.org/vocab#GeometryCollection", simple: true),
@@ -19,6 +18,7 @@ class JSON::LD::Context
       "coordinates" => TermDefinition.new("coordinates", id: "http://ld.geojson.org/vocab#coordinates", simple: true),
       "description" => TermDefinition.new("description", id: "http://purl.org/dc/terms/description", simple: true),
       "features" => TermDefinition.new("features", id: "http://ld.geojson.org/vocab#features", container_mapping: "@set"),
+      "geojson" => TermDefinition.new("geojson", id: "http://ld.geojson.org/vocab#", simple: true),
       "geometry" => TermDefinition.new("geometry", id: "http://ld.geojson.org/vocab#geometry", simple: true),
       "id" => TermDefinition.new("id", id: "@id", simple: true),
       "properties" => TermDefinition.new("properties", id: "http://ld.geojson.org/vocab#properties", simple: true),
