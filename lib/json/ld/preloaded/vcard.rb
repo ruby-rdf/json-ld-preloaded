@@ -5,8 +5,6 @@ require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/2006/vcard/ns") do
     new(term_definitions: {
-      "vcard" => TermDefinition.new("vcard", id: "http://www.w3.org/2006/vcard/ns#", simple: true),
-      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true),
       "Acquaintance" => TermDefinition.new("Acquaintance", id: "http://www.w3.org/2006/vcard/ns#Acquaintance", simple: true),
       "Address" => TermDefinition.new("Address", id: "http://www.w3.org/2006/vcard/ns#Address", simple: true),
       "Agent" => TermDefinition.new("Agent", id: "http://www.w3.org/2006/vcard/ns#Agent", simple: true),
@@ -152,7 +150,9 @@ class JSON::LD::Context
       "title" => TermDefinition.new("title", id: "http://www.w3.org/2006/vcard/ns#title", simple: true),
       "tz" => TermDefinition.new("tz", id: "http://www.w3.org/2006/vcard/ns#tz", simple: true),
       "url" => TermDefinition.new("url", id: "http://www.w3.org/2006/vcard/ns#url", type_mapping: "@id"),
-      "value" => TermDefinition.new("value", id: "http://www.w3.org/2006/vcard/ns#value", simple: true)
+      "value" => TermDefinition.new("value", id: "http://www.w3.org/2006/vcard/ns#value", simple: true),
+      "vcard" => TermDefinition.new("vcard", id: "http://www.w3.org/2006/vcard/ns#", simple: true),
+      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true)
     })
   end
 end
