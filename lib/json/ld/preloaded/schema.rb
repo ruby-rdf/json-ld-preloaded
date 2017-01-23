@@ -1463,7 +1463,6 @@ class JSON::LD::Context
       "hoursAvailable" => TermDefinition.new("hoursAvailable", id: "http://schema.org/hoursAvailable"),
       "howPerformed" => TermDefinition.new("howPerformed", id: "http://schema.org/howPerformed"),
       "ht" => TermDefinition.new("ht", id: "http://www.w3.org/2006/http#", simple: true),
-      "http://schema.org/InStock" => TermDefinition.new("http://schema.org/InStock", id: "http://schema.org/http://schema.org/InStock"),
       "httpMethod" => TermDefinition.new("httpMethod", id: "http://schema.org/httpMethod"),
       "iataCode" => TermDefinition.new("iataCode", id: "http://schema.org/iataCode"),
       "ical" => TermDefinition.new("ical", id: "http://www.w3.org/2002/12/cal/icaltzd#", simple: true),
