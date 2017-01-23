@@ -29,7 +29,6 @@ CONTEXTS = {
   iiif:             "http://iiif.io/api/image/2/context.json",
   lov:              "http://lov.okfn.org/dataset/lov/context",
   oa:               "http://www.w3.org/ns/oa",
-  obi:              "https://openbadgespec.org/v1/context.json",
   prefix:           "http://prefix.cc/context",
   presentation:     "http://iiif.io/api/presentation/2/context.json",
   rdfa:             "http://www.w3.org/2013/json-ld-context/rdfa11",
