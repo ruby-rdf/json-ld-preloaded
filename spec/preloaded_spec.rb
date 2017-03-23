@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe JSON::LD::Context::Preloaded do
   {
-    activitystreams:  "http://asjsonld.mybluemix.net/",
+    activitystreams:  "https://www.w3.org/ns/activitystreams.jsonld",
     csvw:             "https://www.w3.org/ns/csvw",
     datacube:         "http://pebbie.org/context/qb",
     entityfacts:      "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld",
