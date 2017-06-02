@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("https://www.w3.org/ns/activitystreams.jsonld") do
-    new(vocab: "_:", term_definitions: {
+    new(vocab: "_:", processingMode: "json-ld-1.0", term_definitions: {
       "Accept" => TermDefinition.new("Accept", id: "https://www.w3.org/ns/activitystreams#Accept", simple: true),
       "Activity" => TermDefinition.new("Activity", id: "https://www.w3.org/ns/activitystreams#Activity", simple: true),
       "Add" => TermDefinition.new("Add", id: "https://www.w3.org/ns/activitystreams#Add", simple: true),

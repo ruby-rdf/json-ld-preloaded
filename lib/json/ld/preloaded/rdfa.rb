@@ -4,7 +4,8 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/2013/json-ld-context/rdfa11") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
+      "as" => TermDefinition.new("as", id: "https://www.w3.org/ns/activitystreams#", simple: true),
       "cat" => TermDefinition.new("cat", id: "http://www.w3.org/ns/dcat#", simple: true),
       "cc" => TermDefinition.new("cc", id: "http://creativecommons.org/ns#", simple: true),
       "cnt" => TermDefinition.new("cnt", id: "http://www.w3.org/2008/content#", simple: true),
@@ -14,6 +15,8 @@ class JSON::LD::Context
       "dcat" => TermDefinition.new("dcat", id: "http://www.w3.org/ns/dcat#", simple: true),
       "dcterms" => TermDefinition.new("dcterms", id: "http://purl.org/dc/terms/", simple: true),
       "describedby" => TermDefinition.new("describedby", id: "http://www.w3.org/2007/05/powder-s#describedby", simple: true),
+      "dqv" => TermDefinition.new("dqv", id: "http://www.w3.org/ns/dqv#", simple: true),
+      "duv" => TermDefinition.new("duv", id: "https://www.w3.org/TR/vocab-duv#", simple: true),
       "earl" => TermDefinition.new("earl", id: "http://www.w3.org/ns/earl#", simple: true),
       "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true),
       "gldp" => TermDefinition.new("gldp", id: "http://www.w3.org/ns/people#", simple: true),
@@ -21,8 +24,10 @@ class JSON::LD::Context
       "grddl" => TermDefinition.new("grddl", id: "http://www.w3.org/2003/g/data-view#", simple: true),
       "ht" => TermDefinition.new("ht", id: "http://www.w3.org/2006/http#", simple: true),
       "ical" => TermDefinition.new("ical", id: "http://www.w3.org/2002/12/cal/icaltzd#", simple: true),
+      "ldp" => TermDefinition.new("ldp", id: "http://www.w3.org/ns/ldp#", simple: true),
       "license" => TermDefinition.new("license", id: "http://www.w3.org/1999/xhtml/vocab#license", simple: true),
       "ma" => TermDefinition.new("ma", id: "http://www.w3.org/ns/ma-ont#", simple: true),
+      "oa" => TermDefinition.new("oa", id: "http://www.w3.org/ns/oa#", simple: true),
       "og" => TermDefinition.new("og", id: "http://ogp.me/ns#", simple: true),
       "org" => TermDefinition.new("org", id: "http://www.w3.org/ns/org#", simple: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true),

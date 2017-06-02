@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
       "abbr" => TermDefinition.new("abbr", id: "http://dbpedia.org/ontology/abbreviation", simple: true),
       "academicDegree" => TermDefinition.new("academicDegree", id: "http://d-nb.info/standards/elementset/gnd#academicDegree", language_mapping: "de"),
       "affiliation" => TermDefinition.new("affiliation", id: "http://d-nb.info/standards/elementset/gnd#affiliation", simple: true),

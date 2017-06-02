@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("https://w3id.org/bundle/context") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
       "about" => TermDefinition.new("about", id: "http://www.w3.org/ns/oa#hasTarget", type_mapping: "@id"),
       "aggregatedBy" => TermDefinition.new("aggregatedBy", id: "http://purl.org/pav/createdBy", type_mapping: "@id"),
       "aggregatedOn" => TermDefinition.new("aggregatedOn", id: "http://purl.org/pav/createdOn", type_mapping: "http://www.w3.org/2001/XMLSchema#dateTime"),
