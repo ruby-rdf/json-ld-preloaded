@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://iiif.io/api/image/2/context.json") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
       "attribution" => TermDefinition.new("attribution", id: "http://iiif.io/api/presentation/2#attributionLabel"),
       "baseUriRedirect" => TermDefinition.new("baseUriRedirect", id: "http://iiif.io/api/image/2#baseUriRedirectFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "canonicalLinkHeader" => TermDefinition.new("canonicalLinkHeader", id: "http://iiif.io/api/image/2#canonicalLinkHeaderFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),

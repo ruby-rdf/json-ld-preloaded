@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://schema.org/") do
-    new(vocab: "http://schema.org/", term_definitions: {
+    new(vocab: "http://schema.org/", processingMode: "json-ld-1.0", term_definitions: {
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
       "APIReference" => TermDefinition.new("APIReference", id: "http://schema.org/APIReference"),
       "Abdomen" => TermDefinition.new("Abdomen", id: "http://schema.org/Abdomen"),

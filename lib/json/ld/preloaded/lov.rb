@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://lov.okfn.org/dataset/lov/context") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
       "SAN" => TermDefinition.new("SAN", id: "http://www.irit.fr/recherches/MELODI/ontologies/SAN#", simple: true),
       "acco" => TermDefinition.new("acco", id: "http://purl.org/acco/ns#", simple: true),
       "acl" => TermDefinition.new("acl", id: "http://www.w3.org/ns/auth/acl#", simple: true),
@@ -91,6 +91,7 @@ class JSON::LD::Context
       "ctag" => TermDefinition.new("ctag", id: "http://commontag.org/ns#", simple: true),
       "ctorg" => TermDefinition.new("ctorg", id: "http://purl.org/ctic/infraestructuras/organizacion#", simple: true),
       "ctxdesc" => TermDefinition.new("ctxdesc", id: "http://www.demcare.eu/ontologies/contextdescriptor.owl#", simple: true),
+      "cwmo" => TermDefinition.new("cwmo", id: "http://purl.org/cwmo/#", simple: true),
       "cwork" => TermDefinition.new("cwork", id: "http://www.bbc.co.uk/ontologies/creativework/", simple: true),
       "d2rq" => TermDefinition.new("d2rq", id: "http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#", simple: true),
       "dady" => TermDefinition.new("dady", id: "http://purl.org/NET/dady#", simple: true),
@@ -162,6 +163,7 @@ class JSON::LD::Context
       "ext" => TermDefinition.new("ext", id: "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#", simple: true),
       "fabio" => TermDefinition.new("fabio", id: "http://purl.org/spar/fabio/", simple: true),
       "fea" => TermDefinition.new("fea", id: "http://vocab.data.gov/def/fea#", simple: true),
+      "fiesta-iot" => TermDefinition.new("fiesta-iot", id: "http://purl.org/iot/ontology/fiesta-iot#", simple: true),
       "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true),
       "foio" => TermDefinition.new("foio", id: "https://w3id.org/seas/FeatureOfInterestOntology/", simple: true),
       "food" => TermDefinition.new("food", id: "http://data.lirmm.fr/ontologies/food#", simple: true),
@@ -290,6 +292,7 @@ class JSON::LD::Context
       "mdi" => TermDefinition.new("mdi", id: "https://w3id.org/multidimensional-interface/ontology#", simple: true),
       "meb" => TermDefinition.new("meb", id: "http://rdf.myexperiment.org/ontologies/base/", simple: true),
       "media" => TermDefinition.new("media", id: "http://purl.org/media#", simple: true),
+      "medred" => TermDefinition.new("medred", id: "http://w3id.org/medred/medred#", simple: true),
       "mexalgo" => TermDefinition.new("mexalgo", id: "http://mex.aksw.org/mex-algo#", simple: true),
       "mexcore" => TermDefinition.new("mexcore", id: "http://mex.aksw.org/mex-core#", simple: true),
       "mexperf" => TermDefinition.new("mexperf", id: "http://mex.aksw.org/mex-perf#", simple: true),
@@ -451,8 +454,10 @@ class JSON::LD::Context
       "rev" => TermDefinition.new("rev", id: "http://purl.org/stuff/rev#", simple: true),
       "rlog" => TermDefinition.new("rlog", id: "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#", simple: true),
       "ro" => TermDefinition.new("ro", id: "http://purl.org/wf4ever/ro#", simple: true),
+      "rooms" => TermDefinition.new("rooms", id: "http://vocab.deri.ie/rooms#", simple: true),
       "rov" => TermDefinition.new("rov", id: "http://www.w3.org/ns/regorg#", simple: true),
       "rr" => TermDefinition.new("rr", id: "http://www.w3.org/ns/r2rml#", simple: true),
+      "rsctx" => TermDefinition.new("rsctx", id: "http://softeng.polito.it/rsctx#", simple: true),
       "rss" => TermDefinition.new("rss", id: "http://purl.org/rss/1.0/", simple: true),
       "ru" => TermDefinition.new("ru", id: "http://purl.org/imbi/ru-meta.owl#", simple: true),
       "ruto" => TermDefinition.new("ruto", id: "http://rdfunit.aksw.org/ns/core#", simple: true),
@@ -499,6 +504,7 @@ class JSON::LD::Context
       "smg" => TermDefinition.new("smg", id: "http://ns.cerise-project.nl/energy/def/cim-smartgrid#", simple: true),
       "snarm" => TermDefinition.new("snarm", id: "http://rdf.myexperiment.org/ontologies/snarm/", simple: true),
       "sor" => TermDefinition.new("sor", id: "http://purl.org/net/soron/", simple: true),
+      "sosa" => TermDefinition.new("sosa", id: "http://www.w3.org/ns/sosa/", simple: true),
       "sp" => TermDefinition.new("sp", id: "http://spinrdf.org/sp#", simple: true),
       "spatial" => TermDefinition.new("spatial", id: "http://geovocab.org/spatial#", simple: true),
       "spcm" => TermDefinition.new("spcm", id: "http://spi-fm.uca.es/spdef/models/deployment/spcm/1.0#", simple: true),

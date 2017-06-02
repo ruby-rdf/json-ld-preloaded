@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("https://www.w3.org/ns/csvw") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.0", term_definitions: {
       "Cell" => TermDefinition.new("Cell", id: "http://www.w3.org/ns/csvw#Cell", simple: true),
       "Column" => TermDefinition.new("Column", id: "http://www.w3.org/ns/csvw#Column", simple: true),
       "Datatype" => TermDefinition.new("Datatype", id: "http://www.w3.org/ns/csvw#Datatype", simple: true),
@@ -27,6 +27,7 @@ class JSON::LD::Context
       "any" => TermDefinition.new("any", id: "http://www.w3.org/2001/XMLSchema#anyAtomicType", simple: true),
       "anyAtomicType" => TermDefinition.new("anyAtomicType", id: "http://www.w3.org/2001/XMLSchema#anyAtomicType", simple: true),
       "anyURI" => TermDefinition.new("anyURI", id: "http://www.w3.org/2001/XMLSchema#anyURI", simple: true),
+      "as" => TermDefinition.new("as", id: "https://www.w3.org/ns/activitystreams#", simple: true),
       "base" => TermDefinition.new("base", id: "http://www.w3.org/ns/csvw#base"),
       "base64Binary" => TermDefinition.new("base64Binary", id: "http://www.w3.org/2001/XMLSchema#base64Binary", simple: true),
       "binary" => TermDefinition.new("binary", id: "http://www.w3.org/2001/XMLSchema#base64Binary", simple: true),
@@ -58,7 +59,9 @@ class JSON::LD::Context
       "dialect" => TermDefinition.new("dialect", id: "http://www.w3.org/ns/csvw#dialect", type_mapping: "@id"),
       "double" => TermDefinition.new("double", id: "http://www.w3.org/2001/XMLSchema#double", simple: true),
       "doubleQuote" => TermDefinition.new("doubleQuote", id: "http://www.w3.org/ns/csvw#doubleQuote", type_mapping: "http://www.w3.org/2001/XMLSchema#boolean"),
+      "dqv" => TermDefinition.new("dqv", id: "http://www.w3.org/ns/dqv#", simple: true),
       "duration" => TermDefinition.new("duration", id: "http://www.w3.org/2001/XMLSchema#duration", simple: true),
+      "duv" => TermDefinition.new("duv", id: "https://www.w3.org/TR/vocab-duv#", simple: true),
       "encoding" => TermDefinition.new("encoding", id: "http://www.w3.org/ns/csvw#encoding"),
       "float" => TermDefinition.new("float", id: "http://www.w3.org/2001/XMLSchema#float", simple: true),
       "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true),
@@ -82,6 +85,7 @@ class JSON::LD::Context
       "json" => TermDefinition.new("json", id: "http://www.w3.org/ns/csvw#JSON", simple: true),
       "lang" => TermDefinition.new("lang", id: "http://www.w3.org/ns/csvw#lang"),
       "language" => TermDefinition.new("language", id: "http://www.w3.org/2001/XMLSchema#language", simple: true),
+      "ldp" => TermDefinition.new("ldp", id: "http://www.w3.org/ns/ldp#", simple: true),
       "length" => TermDefinition.new("length", id: "http://www.w3.org/ns/csvw#length", type_mapping: "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
       "license" => TermDefinition.new("license", id: "http://www.w3.org/1999/xhtml/vocab#license", simple: true),
       "lineTerminators" => TermDefinition.new("lineTerminators", id: "http://www.w3.org/ns/csvw#lineTerminators"),
