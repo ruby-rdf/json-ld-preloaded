@@ -22,7 +22,7 @@ class JSON::LD::Context
       "observationGroup" => TermDefinition.new("observationGroup", id: "http://purl.org/linked-data/cube#observationGroup", simple: true),
       "order" => TermDefinition.new("order", id: "http://purl.org/linked-data/cube#order", type_mapping: "http://www.w3.org/2001/XMLSchema#int"),
       "parentChildProperty" => TermDefinition.new("parentChildProperty", id: "http://purl.org/linked-data/cube#parentChildProperty", simple: true),
-      "qb" => TermDefinition.new("qb", id: "http://purl.org/linked-data/cube#", simple: true),
+      "qb" => TermDefinition.new("qb", id: "http://purl.org/linked-data/cube#", simple: true, prefix: true),
       "qb:attribute" => TermDefinition.new("qb:attribute", id: "http://purl.org/linked-data/cube#attribute", type_mapping: "@id"),
       "qb:codeList" => TermDefinition.new("qb:codeList", id: "http://purl.org/linked-data/cube#codeList", type_mapping: "@id"),
       "qb:component" => TermDefinition.new("qb:component", id: "http://purl.org/linked-data/cube#component", type_mapping: "@id"),
@@ -46,7 +46,7 @@ class JSON::LD::Context
       "sliceKey" => TermDefinition.new("sliceKey", id: "http://purl.org/linked-data/cube#sliceKey", simple: true),
       "sliceStructure" => TermDefinition.new("sliceStructure", id: "http://purl.org/linked-data/cube#sliceStructure", simple: true),
       "structure" => TermDefinition.new("structure", id: "http://purl.org/linked-data/cube#structure", simple: true),
-      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true)
+      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
 end

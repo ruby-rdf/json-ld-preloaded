@@ -17,7 +17,7 @@ class JSON::LD::Context
       "bbox" => TermDefinition.new("bbox", id: "https://purl.org/geojson/vocab#bbox", container_mapping: "@list"),
       "coordinates" => TermDefinition.new("coordinates", id: "https://purl.org/geojson/vocab#coordinates", container_mapping: "@list"),
       "features" => TermDefinition.new("features", id: "https://purl.org/geojson/vocab#features", container_mapping: "@set"),
-      "geojson" => TermDefinition.new("geojson", id: "https://purl.org/geojson/vocab#", simple: true),
+      "geojson" => TermDefinition.new("geojson", id: "https://purl.org/geojson/vocab#", simple: true, prefix: true),
       "geometry" => TermDefinition.new("geometry", id: "https://purl.org/geojson/vocab#geometry", simple: true),
       "id" => TermDefinition.new("id", id: "@id", simple: true),
       "properties" => TermDefinition.new("properties", id: "https://purl.org/geojson/vocab#properties", simple: true),

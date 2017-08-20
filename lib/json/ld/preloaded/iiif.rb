@@ -9,14 +9,14 @@ class JSON::LD::Context
       "baseUriRedirect" => TermDefinition.new("baseUriRedirect", id: "http://iiif.io/api/image/2#baseUriRedirectFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "canonicalLinkHeader" => TermDefinition.new("canonicalLinkHeader", id: "http://iiif.io/api/image/2#canonicalLinkHeaderFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "cors" => TermDefinition.new("cors", id: "http://iiif.io/api/image/2#corsFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
-      "dc" => TermDefinition.new("dc", id: "http://purl.org/dc/elements/1.1/", simple: true),
-      "dcterms" => TermDefinition.new("dcterms", id: "http://purl.org/dc/terms/", simple: true),
-      "doap" => TermDefinition.new("doap", id: "http://usefulinc.com/ns/doap#", simple: true),
-      "exif" => TermDefinition.new("exif", id: "http://www.w3.org/2003/12/exif/ns#", simple: true),
-      "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true),
+      "dc" => TermDefinition.new("dc", id: "http://purl.org/dc/elements/1.1/", simple: true, prefix: true),
+      "dcterms" => TermDefinition.new("dcterms", id: "http://purl.org/dc/terms/", simple: true, prefix: true),
+      "doap" => TermDefinition.new("doap", id: "http://usefulinc.com/ns/doap#", simple: true, prefix: true),
+      "exif" => TermDefinition.new("exif", id: "http://www.w3.org/2003/12/exif/ns#", simple: true, prefix: true),
+      "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true, prefix: true),
       "formats" => TermDefinition.new("formats", id: "http://iiif.io/api/image/2#format", type_mapping: "http://www.w3.org/2001/XMLSchema#string"),
       "height" => TermDefinition.new("height", id: "http://www.w3.org/2003/12/exif/ns#height", type_mapping: "http://www.w3.org/2001/XMLSchema#integer"),
-      "iiif" => TermDefinition.new("iiif", id: "http://iiif.io/api/image/2#", simple: true),
+      "iiif" => TermDefinition.new("iiif", id: "http://iiif.io/api/image/2#", simple: true, prefix: true),
       "jsonldMediaType" => TermDefinition.new("jsonldMediaType", id: "http://iiif.io/api/image/2#jsonLdMediaTypeFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "license" => TermDefinition.new("license", id: "http://purl.org/dc/terms/rights", type_mapping: "@id"),
       "logo" => TermDefinition.new("logo", id: "http://xmlns.com/foaf/0.1/logo", type_mapping: "@id"),
@@ -30,7 +30,7 @@ class JSON::LD::Context
       "regionSquare" => TermDefinition.new("regionSquare", id: "http://iiif.io/api/image/2#regionSquareFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "rotationArbitrary" => TermDefinition.new("rotationArbitrary", id: "http://iiif.io/api/image/2#arbitraryRotationFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "rotationBy90s" => TermDefinition.new("rotationBy90s", id: "http://iiif.io/api/image/2#rotationBy90sFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
-      "sc" => TermDefinition.new("sc", id: "http://iiif.io/api/presentation/2#", simple: true),
+      "sc" => TermDefinition.new("sc", id: "http://iiif.io/api/presentation/2#", simple: true, prefix: true),
       "scaleFactors" => TermDefinition.new("scaleFactors", id: "http://iiif.io/api/image/2#scaleFactor", type_mapping: "http://www.w3.org/2001/XMLSchema#integer"),
       "service" => TermDefinition.new("service", id: "http://rdfs.org/sioc/services#has_service", type_mapping: "@id"),
       "sizeAboveFull" => TermDefinition.new("sizeAboveFull", id: "http://iiif.io/api/image/2#sizeAboveFullFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
@@ -44,10 +44,10 @@ class JSON::LD::Context
       "sizeByWhListed" => TermDefinition.new("sizeByWhListed", id: "http://iiif.io/api/image/2#sizeByWHListedFeature", type_mapping: "http://iiif.io/api/image/2#Feature"),
       "sizes" => TermDefinition.new("sizes", id: "http://iiif.io/api/image/2#hasSize", type_mapping: "@id"),
       "supports" => TermDefinition.new("supports", id: "http://iiif.io/api/image/2#supports", type_mapping: "@vocab"),
-      "svcs" => TermDefinition.new("svcs", id: "http://rdfs.org/sioc/services#", simple: true),
+      "svcs" => TermDefinition.new("svcs", id: "http://rdfs.org/sioc/services#", simple: true, prefix: true),
       "tiles" => TermDefinition.new("tiles", id: "http://iiif.io/api/image/2#hasTile", type_mapping: "@id"),
       "width" => TermDefinition.new("width", id: "http://www.w3.org/2003/12/exif/ns#width", type_mapping: "http://www.w3.org/2001/XMLSchema#integer"),
-      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true)
+      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
 end
