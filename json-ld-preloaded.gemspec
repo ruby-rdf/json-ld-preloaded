@@ -24,12 +24,12 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 2.2.2'
   gem.requirements          = []
   gem.add_runtime_dependency     'rdf',             '~> 2.2'
-  gem.add_runtime_dependency     'json-ld',         '~> 2.1'
+  gem.add_runtime_dependency     'json-ld',         '~> 2.1', '>= 2.1.5'
   gem.add_runtime_dependency     'multi_json',      '~> 1.11'
-  gem.add_development_dependency 'oj',              '~> 2.12'  unless RUBY_ENGINE == "jruby"
+  gem.add_development_dependency 'oj',              '~> 2.18'  unless RUBY_ENGINE == "jruby"
   gem.add_development_dependency 'rdf-turtle',      '~> 2.2'
-  gem.add_development_dependency 'rspec',           '~> 3.5'
-  gem.add_development_dependency 'yard' ,           '~> 0.8'
+  gem.add_development_dependency 'rspec',           '~> 3.6'
+  gem.add_development_dependency 'yard' ,           '~> 0.9'
 
   gem.post_install_message  = nil
 end

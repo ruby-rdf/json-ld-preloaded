@@ -151,8 +151,8 @@ class JSON::LD::Context
       "tz" => TermDefinition.new("tz", id: "http://www.w3.org/2006/vcard/ns#tz", simple: true),
       "url" => TermDefinition.new("url", id: "http://www.w3.org/2006/vcard/ns#url", type_mapping: "@id"),
       "value" => TermDefinition.new("value", id: "http://www.w3.org/2006/vcard/ns#value", simple: true),
-      "vcard" => TermDefinition.new("vcard", id: "http://www.w3.org/2006/vcard/ns#", simple: true),
-      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true)
+      "vcard" => TermDefinition.new("vcard", id: "http://www.w3.org/2006/vcard/ns#", simple: true, prefix: true),
+      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
 end

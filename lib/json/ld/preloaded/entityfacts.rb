@@ -56,7 +56,7 @@ class JSON::LD::Context
       "url" => TermDefinition.new("url", id: "http://xmlns.com/foaf/0.1/page", simple: true),
       "valid" => TermDefinition.new("valid", id: "http://schema.org/validFrom", type_mapping: "http://www.w3.org/2001/XMLSchema#dateTime"),
       "variantName" => TermDefinition.new("variantName", id: "http://d-nb.info/standards/elementset/gnd#variantName", simple: true),
-      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true)
+      "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
 end
