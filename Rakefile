@@ -26,6 +26,7 @@ CONTEXTS = {
   foaf:             "http://xmlns.com/foaf/context",
   geojson:          "http://geojson.org/geojson-ld/geojson-context.jsonld",
   hydra:            "http://www.w3.org/ns/hydra/core",
+  identity:         "https://w3id.org/identity/v1",
   iiif:             "http://iiif.io/api/image/2/context.json",
   lov:              "http://lov.okfn.org/dataset/lov/context",
   oa:               "http://www.w3.org/ns/oa",
