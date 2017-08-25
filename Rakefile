@@ -19,7 +19,7 @@ namespace :gem do
 end
 
 CONTEXTS = {
-  activitystreams:  "https://www.w3.org/ns/activitystreams.jsonld",
+  activitystreams:  "https://www.w3.org/ns/activitystreams",
   csvw:             "https://www.w3.org/ns/csvw",
   datacube:         "http://pebbie.org/context/qb",
   entityfacts:      "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld",

@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://www.w3.org/ns/activitystreams.jsonld
+# This file generated automatically from https://www.w3.org/ns/activitystreams
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://www.w3.org/ns/activitystreams.jsonld") do
+  add_preloaded("https://www.w3.org/ns/activitystreams") do
     new(vocab: "_:", processingMode: "json-ld-1.0", term_definitions: {
       "Accept" => TermDefinition.new("Accept", id: "https://www.w3.org/ns/activitystreams#Accept", simple: true),
       "Activity" => TermDefinition.new("Activity", id: "https://www.w3.org/ns/activitystreams#Activity", simple: true),
