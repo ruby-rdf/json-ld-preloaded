@@ -6,7 +6,9 @@ gem 'rdf-spec',         github: "ruby-rdf/rdf-spec",        branch: "develop"
 gem 'json-ld',          github: "ruby-rdf/json-ld",         branch: "develop"
 
 group 'development' do
+  gem 'rdf-isomorphic', github: "ruby-rdf/rdf-isomorphic",  branch: "develop"
   gem 'rdf-vocab',      github: "ruby-rdf/rdf-vocab",       branch: "develop"
+  gem 'sxp',            github: "dryruby/sxp.rb",           branch: "develop"
 end
 
 group :debug do
