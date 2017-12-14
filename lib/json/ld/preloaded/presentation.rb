@@ -29,7 +29,7 @@ class JSON::LD::Context
       "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true, prefix: true),
       "format" => TermDefinition.new("format", id: "http://purl.org/dc/elements/1.1/format"),
       "full" => TermDefinition.new("full", id: "http://www.w3.org/ns/oa#hasSource", type_mapping: "@id"),
-      "height" => TermDefinition.new("height", id: "http://www.w3.org/2003/12/exif/ns#height", type_mapping: "http://www.w3.org/2001/XMLSchema#integer"),
+      "height" => TermDefinition.new("height", id: "http://www.w3.org/2003/12/exif/ns#height"),
       "iiif" => TermDefinition.new("iiif", id: "http://iiif.io/api/image/2#", simple: true, prefix: true),
       "images" => TermDefinition.new("images", id: "http://iiif.io/api/presentation/2#hasImageAnnotations", type_mapping: "@id", container_mapping: "@list"),
       "individuals" => TermDefinition.new("individuals", id: "http://iiif.io/api/presentation/2#individualsHint", simple: true),
@@ -82,7 +82,7 @@ class JSON::LD::Context
       "value" => TermDefinition.new("value", id: "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"),
       "viewingDirection" => TermDefinition.new("viewingDirection", id: "http://iiif.io/api/presentation/2#viewingDirection", type_mapping: "@vocab"),
       "viewingHint" => TermDefinition.new("viewingHint", id: "http://iiif.io/api/presentation/2#viewingHint", type_mapping: "@vocab"),
-      "width" => TermDefinition.new("width", id: "http://www.w3.org/2003/12/exif/ns#width", type_mapping: "http://www.w3.org/2001/XMLSchema#integer"),
+      "width" => TermDefinition.new("width", id: "http://www.w3.org/2003/12/exif/ns#width"),
       "within" => TermDefinition.new("within", id: "http://purl.org/dc/terms/isPartOf", type_mapping: "@id"),
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
