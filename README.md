@@ -75,7 +75,7 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
 
 ## Dependencies
 * [Ruby](http://ruby-lang.org/) (>= 2.2.2)
-* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 2.0.3)
+* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 2.2)
 
 ## Mailing List
 * <http://lists.w3.org/Archives/Public/public-rdf-ruby/>
