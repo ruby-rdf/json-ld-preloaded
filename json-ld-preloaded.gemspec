@@ -17,15 +17,12 @@ Gem::Specification.new do |gem|
   gem.platform              = Gem::Platform::RUBY
   gem.files                 = %w(AUTHORS README.md UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
   gem.require_paths         = %w(lib)
-  gem.extensions            = %w()
   gem.test_files            = Dir.glob('spec/**/*.rb') + Dir.glob('spec/test-files/*')
-  gem.has_rdoc              = false
 
   gem.required_ruby_version = '>= 2.2.2'
   gem.requirements          = []
   gem.add_runtime_dependency     'rdf',             '~> 3.0'
-  #gem.add_runtime_dependency     'json-ld',         '~> 3.0'
-  gem.add_runtime_dependency     'json-ld',         '>= 2.2', '< 4.0'
+  gem.add_runtime_dependency     'json-ld',         '~> 3.0'
   gem.add_runtime_dependency     'multi_json',      '~> 1.12'
   gem.add_development_dependency 'oj',              '~> 2.18'  unless RUBY_ENGINE == "jruby"
   gem.add_development_dependency 'rdf-turtle',      '~> 3.0'
