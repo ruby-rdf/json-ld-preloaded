@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://iiif.io/api/presentation/2/context.json") do
-    new(processingMode: "json-ld-1.0", term_definitions: {
+    new(term_definitions: {
       "as" => TermDefinition.new("as", id: "http://www.w3.org/ns/activitystreams#", simple: true, prefix: true),
       "attribution" => TermDefinition.new("attribution", id: "http://iiif.io/api/presentation/2#attributionLabel"),
       "bottom-to-top" => TermDefinition.new("bottom-to-top", id: "http://iiif.io/api/presentation/2#bottomToTopDirection", simple: true),

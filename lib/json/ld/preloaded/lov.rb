@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://lov.okfn.org/dataset/lov/context") do
-    new(processingMode: "json-ld-1.0", term_definitions: {
+    new(term_definitions: {
       "SAN" => TermDefinition.new("SAN", id: "http://www.irit.fr/recherches/MELODI/ontologies/SAN#", simple: true, prefix: true),
       "acco" => TermDefinition.new("acco", id: "http://purl.org/acco/ns#", simple: true, prefix: true),
       "acl" => TermDefinition.new("acl", id: "http://www.w3.org/ns/auth/acl#", simple: true, prefix: true),
@@ -181,6 +181,7 @@ class JSON::LD::Context
       "ep" => TermDefinition.new("ep", id: "http://eprints.org/ontology/", simple: true, prefix: true),
       "eqp" => TermDefinition.new("eqp", id: "https://data.nasa.gov/ontologies/atmonto/equipment#", simple: true, prefix: true),
       "essglobal" => TermDefinition.new("essglobal", id: "http://purl.org/essglobal/vocab/", simple: true, prefix: true),
+      "eupont" => TermDefinition.new("eupont", id: "http://elite.polito.it/ontologies/eupont.owl#", simple: true, prefix: true),
       "event" => TermDefinition.new("event", id: "http://purl.org/NET/c4dm/event.owl#", simple: true, prefix: true),
       "ex" => TermDefinition.new("ex", id: "http://purl.org/net/ns/ex#", simple: true, prefix: true),
       "exif" => TermDefinition.new("exif", id: "http://www.w3.org/2003/12/exif/ns#", simple: true, prefix: true),
@@ -332,6 +333,7 @@ class JSON::LD::Context
       "msm" => TermDefinition.new("msm", id: "http://iserve.kmi.open.ac.uk/ns/msm#", simple: true, prefix: true),
       "msr" => TermDefinition.new("msr", id: "http://www.telegraphis.net/ontology/measurement/measurement#", simple: true, prefix: true),
       "mtlo" => TermDefinition.new("mtlo", id: "http://www.ics.forth.gr/isl/MarineTLO/v4/marinetlo.owl#", simple: true, prefix: true),
+      "mus" => TermDefinition.new("mus", id: "http://data.doremus.org/ontology#", simple: true, prefix: true),
       "music" => TermDefinition.new("music", id: "http://www.kanzaki.com/ns/music#", simple: true, prefix: true),
       "muto" => TermDefinition.new("muto", id: "http://purl.org/muto/core#", simple: true, prefix: true),
       "mv" => TermDefinition.new("mv", id: "http://schema.mobivoc.org/", simple: true, prefix: true),
@@ -403,6 +405,7 @@ class JSON::LD::Context
       "osr" => TermDefinition.new("osr", id: "http://contextus.net/ontology/ontomedia/core/space#", simple: true, prefix: true),
       "osspr" => TermDefinition.new("osspr", id: "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/", simple: true, prefix: true),
       "ostop" => TermDefinition.new("ostop", id: "http://www.ordnancesurvey.co.uk/ontology/Topography/v0.1/Topography.owl#", simple: true, prefix: true),
+      "otl" => TermDefinition.new("otl", id: "https://w3id.org/opentrafficlights#", simple: true, prefix: true),
       "ov" => TermDefinition.new("ov", id: "http://open.vocab.org/terms/", simple: true, prefix: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true, prefix: true),
       "p-plan" => TermDefinition.new("p-plan", id: "http://purl.org/net/p-plan#", simple: true, prefix: true),

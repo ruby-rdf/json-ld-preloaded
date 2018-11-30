@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://schema.org/") do
-    new(vocab: "http://schema.org/", processingMode: "json-ld-1.0", term_definitions: {
+    new(vocab: "http://schema.org/", term_definitions: {
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
       "APIReference" => TermDefinition.new("APIReference", id: "http://schema.org/APIReference"),
       "Abdomen" => TermDefinition.new("Abdomen", id: "http://schema.org/Abdomen"),
@@ -362,6 +362,8 @@ class JSON::LD::Context
       "FourWheelDriveConfiguration" => TermDefinition.new("FourWheelDriveConfiguration", id: "http://schema.org/FourWheelDriveConfiguration"),
       "Friday" => TermDefinition.new("Friday", id: "http://schema.org/Friday"),
       "FrontWheelDriveConfiguration" => TermDefinition.new("FrontWheelDriveConfiguration", id: "http://schema.org/FrontWheelDriveConfiguration"),
+      "FundingAgency" => TermDefinition.new("FundingAgency", id: "http://schema.org/FundingAgency"),
+      "FundingScheme" => TermDefinition.new("FundingScheme", id: "http://schema.org/FundingScheme"),
       "Fungus" => TermDefinition.new("Fungus", id: "http://schema.org/Fungus"),
       "FurnitureStore" => TermDefinition.new("FurnitureStore", id: "http://schema.org/FurnitureStore"),
       "Game" => TermDefinition.new("Game", id: "http://schema.org/Game"),
@@ -389,6 +391,7 @@ class JSON::LD::Context
       "GovernmentOrganization" => TermDefinition.new("GovernmentOrganization", id: "http://schema.org/GovernmentOrganization"),
       "GovernmentPermit" => TermDefinition.new("GovernmentPermit", id: "http://schema.org/GovernmentPermit"),
       "GovernmentService" => TermDefinition.new("GovernmentService", id: "http://schema.org/GovernmentService"),
+      "Grant" => TermDefinition.new("Grant", id: "http://schema.org/Grant"),
       "GraphicNovel" => TermDefinition.new("GraphicNovel", id: "http://schema.org/GraphicNovel"),
       "GroceryStore" => TermDefinition.new("GroceryStore", id: "http://schema.org/GroceryStore"),
       "GroupBoardingPolicy" => TermDefinition.new("GroupBoardingPolicy", id: "http://schema.org/GroupBoardingPolicy"),
@@ -577,6 +580,7 @@ class JSON::LD::Context
       "Monday" => TermDefinition.new("Monday", id: "http://schema.org/Monday"),
       "MonetaryAmount" => TermDefinition.new("MonetaryAmount", id: "http://schema.org/MonetaryAmount"),
       "MonetaryAmountDistribution" => TermDefinition.new("MonetaryAmountDistribution", id: "http://schema.org/MonetaryAmountDistribution"),
+      "MonetaryGrant" => TermDefinition.new("MonetaryGrant", id: "http://schema.org/MonetaryGrant"),
       "MoneyTransfer" => TermDefinition.new("MoneyTransfer", id: "http://schema.org/MoneyTransfer"),
       "MortgageLoan" => TermDefinition.new("MortgageLoan", id: "http://schema.org/MortgageLoan"),
       "Mosque" => TermDefinition.new("Mosque", id: "http://schema.org/Mosque"),
@@ -756,6 +760,7 @@ class JSON::LD::Context
       "ProfessionalService" => TermDefinition.new("ProfessionalService", id: "http://schema.org/ProfessionalService"),
       "ProfilePage" => TermDefinition.new("ProfilePage", id: "http://schema.org/ProfilePage"),
       "ProgramMembership" => TermDefinition.new("ProgramMembership", id: "http://schema.org/ProgramMembership"),
+      "Project" => TermDefinition.new("Project", id: "http://schema.org/Project"),
       "Property" => TermDefinition.new("Property", id: "http://schema.org/Property"),
       "PropertyValue" => TermDefinition.new("PropertyValue", id: "http://schema.org/PropertyValue"),
       "PropertyValueSpecification" => TermDefinition.new("PropertyValueSpecification", id: "http://schema.org/PropertyValueSpecification"),
@@ -815,6 +820,7 @@ class JSON::LD::Context
       "Report" => TermDefinition.new("Report", id: "http://schema.org/Report"),
       "ReportageNewsArticle" => TermDefinition.new("ReportageNewsArticle", id: "http://schema.org/ReportageNewsArticle"),
       "ReportedDoseSchedule" => TermDefinition.new("ReportedDoseSchedule", id: "http://schema.org/ReportedDoseSchedule"),
+      "ResearchProject" => TermDefinition.new("ResearchProject", id: "http://schema.org/ResearchProject"),
       "Reservation" => TermDefinition.new("Reservation", id: "http://schema.org/Reservation"),
       "ReservationCancelled" => TermDefinition.new("ReservationCancelled", id: "http://schema.org/ReservationCancelled"),
       "ReservationConfirmed" => TermDefinition.new("ReservationConfirmed", id: "http://schema.org/ReservationConfirmed"),
@@ -1503,6 +1509,7 @@ class JSON::LD::Context
       "fuelType" => TermDefinition.new("fuelType", id: "http://schema.org/fuelType", type_mapping: "@id"),
       "function" => TermDefinition.new("function", id: "http://schema.org/function"),
       "functionalClass" => TermDefinition.new("functionalClass", id: "http://schema.org/functionalClass"),
+      "fundedItem" => TermDefinition.new("fundedItem", id: "http://schema.org/fundedItem"),
       "funder" => TermDefinition.new("funder", id: "http://schema.org/funder"),
       "game" => TermDefinition.new("game", id: "http://schema.org/game"),
       "gameItem" => TermDefinition.new("gameItem", id: "http://schema.org/gameItem"),

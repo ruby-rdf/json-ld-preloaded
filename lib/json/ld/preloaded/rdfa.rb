@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/2013/json-ld-context/rdfa11") do
-    new(processingMode: "json-ld-1.0", term_definitions: {
+    new(term_definitions: {
       "as" => TermDefinition.new("as", id: "https://www.w3.org/ns/activitystreams#", simple: true, prefix: true),
       "cat" => TermDefinition.new("cat", id: "http://www.w3.org/ns/dcat#", simple: true, prefix: true),
       "cc" => TermDefinition.new("cc", id: "http://creativecommons.org/ns#", simple: true, prefix: true),
