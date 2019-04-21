@@ -5,6 +5,8 @@ require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld") do
     new(term_definitions: {
+      "Feature" => TermDefinition.new("Feature", id: "https://purl.org/geojson/vocab#Feature", simple: true),
+      "Point" => TermDefinition.new("Point", id: "https://purl.org/geojson/vocab#Point", simple: true),
       "abbr" => TermDefinition.new("abbr", id: "http://dbpedia.org/ontology/abbreviation", simple: true),
       "academicDegree" => TermDefinition.new("academicDegree", id: "http://d-nb.info/standards/elementset/gnd#academicDegree", language_mapping: "de"),
       "affiliation" => TermDefinition.new("affiliation", id: "http://d-nb.info/standards/elementset/gnd#affiliation", simple: true),
@@ -13,6 +15,7 @@ class JSON::LD::Context
       "associatedPlace" => TermDefinition.new("associatedPlace", id: "http://d-nb.info/standards/elementset/gnd#associatedPlace", simple: true),
       "biographicalOrHistoricalInformation" => TermDefinition.new("biographicalOrHistoricalInformation", id: "http://d-nb.info/standards/elementset/gnd#biographicalOrHistoricalInformation", language_mapping: "de"),
       "collection" => TermDefinition.new("collection", id: "http://d-nb.info/standards/elementset/dnb#isDescribedIn", simple: true),
+      "coordinates" => TermDefinition.new("coordinates", id: "https://purl.org/geojson/vocab#coordinates", container_mapping: "@list"),
       "dateOfBirth" => TermDefinition.new("dateOfBirth", id: "http://d-nb.info/standards/elementset/gnd#dateOfBirth", simple: true),
       "dateOfBirthAndDeath" => TermDefinition.new("dateOfBirthAndDeath", id: "http://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath", simple: true),
       "dateOfDeath" => TermDefinition.new("dateOfDeath", id: "http://d-nb.info/standards/elementset/gnd#dateOfDeath", simple: true),
@@ -27,6 +30,8 @@ class JSON::LD::Context
       "forename" => TermDefinition.new("forename", id: "http://d-nb.info/standards/elementset/gnd#forename", simple: true),
       "founder" => TermDefinition.new("founder", id: "http://d-nb.info/standards/elementset/gnd#founder", simple: true),
       "gender" => TermDefinition.new("gender", id: "http://d-nb.info/standards/elementset/gnd#gender", simple: true),
+      "geojson" => TermDefinition.new("geojson", id: "https://purl.org/geojson/vocab#", simple: true, prefix: true),
+      "geometry" => TermDefinition.new("geometry", id: "https://purl.org/geojson/vocab#geometry", simple: true),
       "homepage" => TermDefinition.new("homepage", id: "http://d-nb.info/standards/elementset/gnd#homepage", simple: true),
       "icon" => TermDefinition.new("icon", id: "http://xmlns.com/foaf/0.1/logo", simple: true),
       "image" => TermDefinition.new("image", id: "http://xmlns.com/foaf/0.1/img", simple: true),
@@ -61,10 +66,12 @@ class JSON::LD::Context
       "thumbnail" => TermDefinition.new("thumbnail", id: "http://xmlns.com/foaf/0.1/thumbnail", simple: true),
       "titleOfNobility" => TermDefinition.new("titleOfNobility", id: "http://d-nb.info/standards/elementset/gnd#titleOfNobility", language_mapping: "de"),
       "topic" => TermDefinition.new("topic", id: "http://d-nb.info/standards/elementset/gnd#topic", simple: true),
+      "type" => TermDefinition.new("type", id: "@type", simple: true),
       "url" => TermDefinition.new("url", id: "http://xmlns.com/foaf/0.1/page", simple: true),
       "valid" => TermDefinition.new("valid", id: "http://schema.org/validFrom", type_mapping: "http://www.w3.org/2001/XMLSchema#dateTime"),
       "variantName" => TermDefinition.new("variantName", id: "http://d-nb.info/standards/elementset/gnd#variantName", simple: true),
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld", "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld")
 end

@@ -28,6 +28,7 @@ class JSON::LD::Context
       "license" => TermDefinition.new("license", id: "http://www.w3.org/1999/xhtml/vocab#license", simple: true),
       "ma" => TermDefinition.new("ma", id: "http://www.w3.org/ns/ma-ont#", simple: true, prefix: true),
       "oa" => TermDefinition.new("oa", id: "http://www.w3.org/ns/oa#", simple: true, prefix: true),
+      "odrl" => TermDefinition.new("odrl", id: "http://www.w3.org/ns/odrl/2/", simple: true, prefix: true),
       "og" => TermDefinition.new("og", id: "http://ogp.me/ns#", simple: true, prefix: true),
       "org" => TermDefinition.new("org", id: "http://www.w3.org/ns/org#", simple: true, prefix: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true, prefix: true),
@@ -41,7 +42,7 @@ class JSON::LD::Context
       "rif" => TermDefinition.new("rif", id: "http://www.w3.org/2007/rif#", simple: true, prefix: true),
       "role" => TermDefinition.new("role", id: "http://www.w3.org/1999/xhtml/vocab#role", simple: true),
       "rr" => TermDefinition.new("rr", id: "http://www.w3.org/ns/r2rml#", simple: true, prefix: true),
-      "schema" => TermDefinition.new("schema", id: "http://schema.org/", simple: true, prefix: true),
+      "schema" => TermDefinition.new("schema", id: "https://schema.org/", simple: true, prefix: true),
       "sd" => TermDefinition.new("sd", id: "http://www.w3.org/ns/sparql-service-description#", simple: true, prefix: true),
       "sioc" => TermDefinition.new("sioc", id: "http://rdfs.org/sioc/ns#", simple: true, prefix: true),
       "skos" => TermDefinition.new("skos", id: "http://www.w3.org/2004/02/skos/core#", simple: true, prefix: true),
@@ -59,4 +60,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://www.w3.org/2013/json-ld-context/rdfa11", "http://www.w3.org/2013/json-ld-context/rdfa11")
 end

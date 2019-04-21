@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://www.w3.org/ns/csvw
+# This file generated automatically from http://www.w3.org/ns/csvw
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://www.w3.org/ns/csvw") do
+  add_preloaded("http://www.w3.org/ns/csvw") do
     new(term_definitions: {
       "Cell" => TermDefinition.new("Cell", id: "http://www.w3.org/ns/csvw#Cell", simple: true),
       "Column" => TermDefinition.new("Column", id: "http://www.w3.org/ns/csvw#Column", simple: true),
@@ -178,4 +178,5 @@ class JSON::LD::Context
       "yearMonthDuration" => TermDefinition.new("yearMonthDuration", id: "http://www.w3.org/2001/XMLSchema#yearMonthDuration", simple: true)
     })
   end
+  alias_preloaded("https://www.w3.org/ns/csvw", "http://www.w3.org/ns/csvw")
 end

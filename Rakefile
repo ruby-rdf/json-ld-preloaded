@@ -19,23 +19,34 @@ namespace :gem do
 end
 
 CONTEXTS = {
-  activitystreams:  "https://www.w3.org/ns/activitystreams",
-  csvw:             "https://www.w3.org/ns/csvw",
-  datacube:         "http://pebbie.org/context/qb",
-  entityfacts:      "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld",
-  foaf:             "http://xmlns.com/foaf/context",
-  geojson:          "http://geojson.org/geojson-ld/geojson-context.jsonld",
-  hydra:            "http://www.w3.org/ns/hydra/core",
+  activitystreams:  ["http://www.w3.org/ns/activitystreams", "https://www.w3.org/ns/activitystreams"],
+  csvw:             ["http://www.w3.org/ns/csvw", "https://www.w3.org/ns/csvw"],
+  datacube:         ["http://pebbie.org/context/qb", "https://pebbie.org/context/qb"],
+  entityfacts:      [
+    "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld",
+    "https://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld"
+  ],
+  foaf:             ["http://xmlns.com/foaf/context", "https://xmlns.com/foaf/context"],
+  geojson:          [
+    "http://geojson.org/geojson-ld/geojson-context.jsonld",
+    "https://geojson.org/geojson-ld/geojson-context.jsonld"
+  ],
+  hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"],
   identity:         "https://w3id.org/identity/v1",
-  iiif:             "http://iiif.io/api/image/2/context.json",
-  lov:              "http://lov.okfn.org/dataset/lov/context",
-  oa:               "http://www.w3.org/ns/oa",
-  prefix:           "http://prefix.cc/context",
-  presentation:     "http://iiif.io/api/presentation/2/context.json",
-  rdfa:             "http://www.w3.org/2013/json-ld-context/rdfa11",
-  research:         "https://w3id.org/bundle/context",
-  schema:           "http://schema.org/",
-  vcard:            "http://www.w3.org/2006/vcard/ns",
+  iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"],
+  lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"],
+  oa:               ["http://www.w3.org/ns/oa", "https://www.w3.org/ns/oa"],
+  prefix:           ["http://prefix.cc/context", "https://prefix.cc/context"],
+  presentation:     ["http://iiif.io/api/presentation/2/context.json", "https://iiif.io/api/presentation/2/context.json"],
+  rdfa:             ["http://www.w3.org/2013/json-ld-context/rdfa11", "https://www.w3.org/2013/json-ld-context/rdfa11"],
+  research:         ["https://w3id.org/bundle/context", "https://w3id.org/bundle/context"],
+  schema:           [
+    "http://schema.org/",
+    "https://schema.org/",
+    "http://schema.org",
+    "https://schema.org"
+  ],
+  vcard:            ["http://www.w3.org/2006/vcard/ns", "https://www.w3.org/2006/vcard/ns"],
 }
 desc "Generate Contexts"
 task :gen_contexts => CONTEXTS.keys.map {|v| "lib/json/ld/preloaded/#{v}.rb"} do
@@ -51,8 +62,9 @@ CONTEXTS.each do |id, url|
   file "lib/json/ld/preloaded/#{id}.rb" => :do_build do
     puts "Generate lib/json/ld/preloaded/#{id}.rb"
     File.open("lib/json/ld/preloaded/#{id}.rb", "w") do |f|
+      url, *aliases = Array(url)
       c = JSON::LD::Context.new().parse(url)
-      f.write c.to_rb
+      f.write c.to_rb(*aliases)
     end
   end
 end

@@ -52,4 +52,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://w3id.org/bundle/context", "https://w3id.org/bundle/context")
 end

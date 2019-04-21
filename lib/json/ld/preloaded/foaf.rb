@@ -21,4 +21,5 @@ class JSON::LD::Context
       "workplaceHomepage" => TermDefinition.new("workplaceHomepage", id: "http://xmlns.com/foaf/0.1/workplaceHomepage", type_mapping: "@id")
     })
   end
+  alias_preloaded("https://xmlns.com/foaf/context", "http://xmlns.com/foaf/context")
 end
