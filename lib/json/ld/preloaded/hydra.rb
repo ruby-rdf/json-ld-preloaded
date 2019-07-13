@@ -32,21 +32,27 @@ class JSON::LD::Context
       "defines" => TermDefinition.new("defines", id: "http://www.w3.org/2000/01/rdf-schema#isDefinedBy", reverse_property: true),
       "description" => TermDefinition.new("description", id: "http://www.w3.org/ns/hydra/core#description", simple: true),
       "domain" => TermDefinition.new("domain", id: "http://www.w3.org/2000/01/rdf-schema#domain", type_mapping: "@vocab"),
+      "domainIncludes" => TermDefinition.new("domainIncludes", id: "http://schema.org/domainIncludes", type_mapping: "@id"),
       "entrypoint" => TermDefinition.new("entrypoint", id: "http://www.w3.org/ns/hydra/core#entrypoint", type_mapping: "@id"),
       "expects" => TermDefinition.new("expects", id: "http://www.w3.org/ns/hydra/core#expects", type_mapping: "@vocab"),
+      "expectsHeader" => TermDefinition.new("expectsHeader", id: "http://www.w3.org/ns/hydra/core#expectsHeader", type_mapping: "http://www.w3.org/2001/XMLSchema#string"),
       "first" => TermDefinition.new("first", id: "http://www.w3.org/ns/hydra/core#first", type_mapping: "@id"),
       "freetextQuery" => TermDefinition.new("freetextQuery", id: "http://www.w3.org/ns/hydra/core#freetextQuery", simple: true),
       "hydra" => TermDefinition.new("hydra", id: "http://www.w3.org/ns/hydra/core#", simple: true, prefix: true),
       "label" => TermDefinition.new("label", id: "http://www.w3.org/2000/01/rdf-schema#label", simple: true),
       "last" => TermDefinition.new("last", id: "http://www.w3.org/ns/hydra/core#last", type_mapping: "@id"),
+      "limit" => TermDefinition.new("limit", id: "http://www.w3.org/ns/hydra/core#limit", type_mapping: "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
       "manages" => TermDefinition.new("manages", id: "http://www.w3.org/ns/hydra/core#manages", simple: true),
       "mapping" => TermDefinition.new("mapping", id: "http://www.w3.org/ns/hydra/core#mapping", simple: true),
       "member" => TermDefinition.new("member", id: "http://www.w3.org/ns/hydra/core#member", type_mapping: "@id"),
       "method" => TermDefinition.new("method", id: "http://www.w3.org/ns/hydra/core#method", simple: true),
       "next" => TermDefinition.new("next", id: "http://www.w3.org/ns/hydra/core#next", type_mapping: "@id"),
       "object" => TermDefinition.new("object", id: "http://www.w3.org/ns/hydra/core#object", type_mapping: "@vocab"),
+      "offset" => TermDefinition.new("offset", id: "http://www.w3.org/ns/hydra/core#offset", type_mapping: "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
       "operation" => TermDefinition.new("operation", id: "http://www.w3.org/ns/hydra/core#operation", simple: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true, prefix: true),
+      "pageIndex" => TermDefinition.new("pageIndex", id: "http://www.w3.org/ns/hydra/core#pageIndex", type_mapping: "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
+      "pageReference" => TermDefinition.new("pageReference", id: "http://www.w3.org/ns/hydra/core#pageReference"),
       "possibleStatus" => TermDefinition.new("possibleStatus", id: "http://www.w3.org/ns/hydra/core#possibleStatus", type_mapping: "@id"),
       "preferredPrefix" => TermDefinition.new("preferredPrefix", id: "http://purl.org/vocab/vann/preferredNamespacePrefix", simple: true),
       "previous" => TermDefinition.new("previous", id: "http://www.w3.org/ns/hydra/core#previous", type_mapping: "@id"),
@@ -57,6 +63,8 @@ class JSON::LD::Context
       "readable" => TermDefinition.new("readable", id: "http://www.w3.org/ns/hydra/core#readable", simple: true),
       "required" => TermDefinition.new("required", id: "http://www.w3.org/ns/hydra/core#required", simple: true),
       "returns" => TermDefinition.new("returns", id: "http://www.w3.org/ns/hydra/core#returns", type_mapping: "@vocab"),
+      "returnsHeader" => TermDefinition.new("returnsHeader", id: "http://www.w3.org/ns/hydra/core#returnsHeader", type_mapping: "http://www.w3.org/2001/XMLSchema#string"),
+      "schema" => TermDefinition.new("schema", id: "http://schema.org/", simple: true, prefix: true),
       "search" => TermDefinition.new("search", id: "http://www.w3.org/ns/hydra/core#search", simple: true),
       "seeAlso" => TermDefinition.new("seeAlso", id: "http://www.w3.org/2000/01/rdf-schema#seeAlso", type_mapping: "@id"),
       "statusCode" => TermDefinition.new("statusCode", id: "http://www.w3.org/ns/hydra/core#statusCode", simple: true),
@@ -77,4 +85,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://www.w3.org/ns/hydra/core", "http://www.w3.org/ns/hydra/core")
 end

@@ -155,4 +155,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://www.w3.org/2006/vcard/ns", "http://www.w3.org/2006/vcard/ns")
 end

@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://www.w3.org/ns/activitystreams
+# This file generated automatically from http://www.w3.org/ns/activitystreams
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://www.w3.org/ns/activitystreams") do
+  add_preloaded("http://www.w3.org/ns/activitystreams") do
     new(vocab: "_:", term_definitions: {
       "Accept" => TermDefinition.new("Accept", id: "https://www.w3.org/ns/activitystreams#Accept", simple: true),
       "Activity" => TermDefinition.new("Activity", id: "https://www.w3.org/ns/activitystreams#Activity", simple: true),
@@ -153,4 +153,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://www.w3.org/ns/activitystreams", "http://www.w3.org/ns/activitystreams")
 end

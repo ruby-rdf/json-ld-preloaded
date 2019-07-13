@@ -9,6 +9,7 @@ class JSON::LD::Context
       "cat" => TermDefinition.new("cat", id: "http://www.w3.org/ns/dcat#", simple: true, prefix: true),
       "cc" => TermDefinition.new("cc", id: "http://creativecommons.org/ns#", simple: true, prefix: true),
       "cnt" => TermDefinition.new("cnt", id: "http://www.w3.org/2008/content#", simple: true, prefix: true),
+      "csvw" => TermDefinition.new("csvw", id: "http://www.w3.org/ns/csvw#", simple: true, prefix: true),
       "ctag" => TermDefinition.new("ctag", id: "http://commontag.org/ns#", simple: true, prefix: true),
       "dc" => TermDefinition.new("dc", id: "http://purl.org/dc/terms/", simple: true, prefix: true),
       "dc11" => TermDefinition.new("dc11", id: "http://purl.org/dc/elements/1.1/", simple: true, prefix: true),
@@ -28,6 +29,7 @@ class JSON::LD::Context
       "license" => TermDefinition.new("license", id: "http://www.w3.org/1999/xhtml/vocab#license", simple: true),
       "ma" => TermDefinition.new("ma", id: "http://www.w3.org/ns/ma-ont#", simple: true, prefix: true),
       "oa" => TermDefinition.new("oa", id: "http://www.w3.org/ns/oa#", simple: true, prefix: true),
+      "odrl" => TermDefinition.new("odrl", id: "http://www.w3.org/ns/odrl/2/", simple: true, prefix: true),
       "og" => TermDefinition.new("og", id: "http://ogp.me/ns#", simple: true, prefix: true),
       "org" => TermDefinition.new("org", id: "http://www.w3.org/ns/org#", simple: true, prefix: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true, prefix: true),
@@ -59,4 +61,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://www.w3.org/2013/json-ld-context/rdfa11", "http://www.w3.org/2013/json-ld-context/rdfa11")
 end

@@ -1,8 +1,8 @@
 # JSON-LD Preloaded
 JSON-LD with preloaded contexts.
 
-[![Gem Version](https://badge.fury.io/rb/json-ld-preloaded.png)](http://badge.fury.io/rb/json-ld-preloaded)
-[![Build Status](https://secure.travis-ci.org/ruby-rdf/json-ld-preloaded.png?branch=master)](http://travis-ci.org/ruby-rdf/json-ld-preloaded)
+[![Gem Version](https://badge.fury.io/rb/json-ld-preloaded.png)](https://badge.fury.io/rb/json-ld-preloaded)
+[![Build Status](https://secure.travis-ci.org/ruby-rdf/json-ld-preloaded.png?branch=master)](https://travis-ci.org/ruby-rdf/json-ld-preloaded)
 
 ## Features
 
@@ -57,13 +57,13 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
     require 'rdf/vocab'
 
     input = JSON.parse %({
-      "@context": "http://schema.org/",
+      "@context": "https://schema.org/",
       "@id": "https://github.com/ruby-rdf/json-ld-preloaded",
       "@type": "SoftwareApplication",
       "name": "JSON-LD Preloaded",
       "description": "A meta-release of the json-ld gem including preloaded vocabularies.",
       "author": {
-        "@id": "http://greggkellogg.net/foaf#me",
+        "@id": "https://greggkellogg.net/foaf#me",
         "@type": "Person",
         "name": "Gregg Kellogg"
       }
@@ -74,14 +74,14 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
     end
 
 ## Dependencies
-* [Ruby](http://ruby-lang.org/) (>= 2.2.2)
-* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 2.2)
+* [Ruby](https://ruby-lang.org/) (>= 2.2.2)
+* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 2.2)
 
 ## Mailing List
-* <http://lists.w3.org/Archives/Public/public-rdf-ruby/>
+* <https://lists.w3.org/Archives/Public/public-rdf-ruby/>
 
 ## Author
-* [Gregg Kellogg](http://github.com/gkellogg) - <http://kellogg-assoc.com/>
+* [Gregg Kellogg](https://github.com/gkellogg) - <https://greggkellogg.net/>
 
 ## Contributing
 * Do your best to adhere to the existing coding conventions and idioms.
@@ -96,21 +96,18 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
   of thumb, additions larger than about 15 lines of code), we need an
   explicit [public domain dedication][PDD] on record from you.
 
-License
--------
+## License
 
 This is free and unencumbered public domain software. For more information,
-see <http://unlicense.org/> or the accompanying {file:UNLICENSE} file.
+see <https://unlicense.org/> or the accompanying {file:UNLICENSE} file.
 
-[Ruby]:             http://ruby-lang.org/
-[RDF]:              http://www.w3.org/RDF/
-[YARD]:             http://yardoc.org/
-[YARD-GS]:          http://rubydoc.info/docs/yard/file/docs/GettingStarted.md
-[PDD]:              http://lists.w3.org/Archives/Public/public-rdf-ruby/2010May/0013.html
-[RDF.rb]:           http://rubygems.org/gems/rdf
-[Backports]:        http://rubygems.org/gems/backports
-[JSON-LD]:          http://www.w3.org/TR/json-ld/ "JSON-LD 1.0"
-[JSON-LD API]:      http://www.w3.org/TR/json-ld-api/ "JSON-LD 1.0 Processing Algorithms and API"
-[JSON-LD Framing]:  http://json-ld.org/spec/latest/json-ld-framing/ "JSON-LD Framing 1.0"
+[Ruby]:             https://ruby-lang.org/
+[RDF]:              https://www.w3.org/RDF/
+[YARD]:             https://yardoc.org/
+[YARD-GS]:          https://rubydoc.info/docs/yard/file/docs/GettingStarted.md
+[PDD]:              https://lists.w3.org/Archives/Public/public-rdf-ruby/2010May/0013.html
+[RDF.rb]:           https://rubygems.org/gems/rdf
+[Backports]:        https://rubygems.org/gems/backports
+[JSON-LD]:          https://www.w3.org/TR/json-ld11/ "JSON-LD 1.1"
 [Promises]:         http://dom.spec.whatwg.org/#promises
 [jsonlint]:         https://rubygems.org/gems/jsonlint

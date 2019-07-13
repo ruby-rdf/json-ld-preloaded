@@ -9,17 +9,9 @@ group 'development' do
   gem 'rdf-isomorphic', github: "ruby-rdf/rdf-isomorphic",  branch: "develop"
   gem 'rdf-vocab',      github: "ruby-rdf/rdf-vocab",       branch: "develop"
   gem 'sxp',            github: "dryruby/sxp.rb",           branch: "develop"
+  gem 'nokogiri',       '~> 1.8'
 end
 
 group :debug do
   gem "byebug", platforms: :mri
-end
-
-platforms :rbx do
-  gem 'rubysl',   '~> 2.0'
-  gem 'rubinius', '~> 2.0'
-end
-
-platforms :jruby do
-  gem 'gson',     '~> 0.6'
 end
