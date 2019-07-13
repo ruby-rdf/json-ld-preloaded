@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-$:.unshift(File.expand_path(File.join(File.dirname(__FILE__), 'lib')))
+$:.unshift(File.expand_path("../lib", __FILE__))
 require 'rubygems'
 require 'bundler/setup'
 require 'json/ld'
@@ -63,7 +63,7 @@ CONTEXTS.each do |id, url|
     puts "Generate lib/json/ld/preloaded/#{id}.rb"
     File.open("lib/json/ld/preloaded/#{id}.rb", "w") do |f|
       url, *aliases = Array(url)
-      c = JSON::LD::Context.new().parse(url)
+      c = JSON::LD::Context.parse(url, headers: {'Accept' => 'application/ld+json'})
       f.write c.to_rb(*aliases)
     end
   end
