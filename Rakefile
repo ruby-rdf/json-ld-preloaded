@@ -34,6 +34,7 @@ CONTEXTS = {
   hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"],
   identity:         "https://w3id.org/identity/v1",
   iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"],
+  linkedart:        "https://linked.art/ns/v1/linked-art.json",
   lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"],
   oa:               ["http://www.w3.org/ns/oa", "https://www.w3.org/ns/oa"],
   prefix:           ["http://prefix.cc/context", "https://prefix.cc/context"],
@@ -46,6 +47,7 @@ CONTEXTS = {
     "http://schema.org",
     "https://schema.org"
   ],
+  vc:               ["https://www.w3.org/2018/credentials/v1"],
   vcard:            ["http://www.w3.org/2006/vcard/ns", "https://www.w3.org/2006/vcard/ns"],
 }
 desc "Generate Contexts"
