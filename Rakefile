@@ -32,7 +32,6 @@ CONTEXTS = {
     "https://geojson.org/geojson-ld/geojson-context.jsonld"
   ].freeze,
   hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"].freeze,
-  identity:         ["https://w3id.org/identity/v1", "http://w3id.org/identity/v1"].freeze,
   iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"].freeze,
   linkedart:        ["http://linked.art/ns/v1/linked-art.json", "https://linked.art/ns/v1/linked-art.json"].freeze,
   lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"].freeze,
