@@ -58,6 +58,7 @@ class JSON::LD::Context
       "previous" => TermDefinition.new("previous", id: "http://www.w3.org/ns/hydra/core#previous", type_mapping: "@id"),
       "property" => TermDefinition.new("property", id: "http://www.w3.org/ns/hydra/core#property", type_mapping: "@vocab"),
       "range" => TermDefinition.new("range", id: "http://www.w3.org/2000/01/rdf-schema#range", type_mapping: "@vocab"),
+      "rangeIncludes" => TermDefinition.new("rangeIncludes", id: "http://schema.org/rangeIncludes", type_mapping: "@id"),
       "rdf" => TermDefinition.new("rdf", id: "http://www.w3.org/1999/02/22-rdf-syntax-ns#", simple: true, prefix: true),
       "rdfs" => TermDefinition.new("rdfs", id: "http://www.w3.org/2000/01/rdf-schema#", simple: true, prefix: true),
       "readable" => TermDefinition.new("readable", id: "http://www.w3.org/ns/hydra/core#readable", simple: true),

@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://linked.art/ns/v1/linked-art.json
+# This file generated automatically from http://linked.art/ns/v1/linked-art.json
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://linked.art/ns/v1/linked-art.json") do
+  add_preloaded("http://linked.art/ns/v1/linked-art.json") do
     new(processingMode: "json-ld-1.1", term_definitions: {
       "Acquisition" => TermDefinition.new("Acquisition", id: "http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition", context: {"part_of"=>{"@id"=>"crm:P9i_forms_part_of", "@type"=>"@id", "@container"=>"@set"}, "part"=>{"@id"=>"crm:P9_consists_of", "@type"=>"@id", "@container"=>"@set"}}),
       "Activity" => TermDefinition.new("Activity", id: "http://www.cidoc-crm.org/cidoc-crm/E7_Activity", context: {"part_of"=>{"@id"=>"crm:P9i_forms_part_of", "@type"=>"@id", "@container"=>"@set"}, "part"=>{"@id"=>"crm:P9_consists_of", "@type"=>"@id", "@container"=>"@set"}}),
@@ -433,4 +433,5 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
+  alias_preloaded("https://linked.art/ns/v1/linked-art.json", "http://linked.art/ns/v1/linked-art.json")
 end
