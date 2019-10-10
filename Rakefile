@@ -19,36 +19,36 @@ namespace :gem do
 end
 
 CONTEXTS = {
-  activitystreams:  ["http://www.w3.org/ns/activitystreams", "https://www.w3.org/ns/activitystreams"],
-  csvw:             ["http://www.w3.org/ns/csvw", "https://www.w3.org/ns/csvw"],
-  datacube:         ["http://pebbie.org/context/qb", "https://pebbie.org/context/qb"],
+  activitystreams:  ["http://www.w3.org/ns/activitystreams", "https://www.w3.org/ns/activitystreams"].freeze,
+  csvw:             ["http://www.w3.org/ns/csvw", "https://www.w3.org/ns/csvw"].freeze,
+  datacube:         ["http://pebbie.org/context/qb", "https://pebbie.org/context/qb"].freeze,
   entityfacts:      [
     "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld",
     "https://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld"
-  ],
-  foaf:             ["http://xmlns.com/foaf/context", "https://xmlns.com/foaf/context"],
+  ].freeze,
+  foaf:             ["http://xmlns.com/foaf/context", "https://xmlns.com/foaf/context"].freeze,
   geojson:          [
     "http://geojson.org/geojson-ld/geojson-context.jsonld",
     "https://geojson.org/geojson-ld/geojson-context.jsonld"
-  ],
-  hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"],
-  identity:         "https://w3id.org/identity/v1",
-  iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"],
-  linkedart:        "https://linked.art/ns/v1/linked-art.json",
-  lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"],
-  oa:               ["http://www.w3.org/ns/oa", "https://www.w3.org/ns/oa"],
-  prefix:           ["http://prefix.cc/context", "https://prefix.cc/context"],
-  presentation:     ["http://iiif.io/api/presentation/2/context.json", "https://iiif.io/api/presentation/2/context.json"],
-  rdfa:             ["http://www.w3.org/2013/json-ld-context/rdfa11", "https://www.w3.org/2013/json-ld-context/rdfa11"],
-  research:         ["https://w3id.org/bundle/context", "https://w3id.org/bundle/context"],
+  ].freeze,
+  hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"].freeze,
+  identity:         ["https://w3id.org/identity/v1", "http://w3id.org/identity/v1"].freeze,
+  iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"].freeze,
+  linkedart:        ["http://linked.art/ns/v1/linked-art.json", "https://linked.art/ns/v1/linked-art.json"].freeze,
+  lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"].freeze,
+  oa:               ["http://www.w3.org/ns/oa", "https://www.w3.org/ns/oa"].freeze,
+  prefix:           ["http://prefix.cc/context", "https://prefix.cc/context"].freeze,
+  presentation:     ["http://iiif.io/api/presentation/2/context.json", "https://iiif.io/api/presentation/2/context.json"].freeze,
+  rdfa:             ["http://www.w3.org/2013/json-ld-context/rdfa11", "https://www.w3.org/2013/json-ld-context/rdfa11"].freeze,
+  research:         ["https://w3id.org/bundle/context", "https://w3id.org/bundle/context"].freeze,
   schema:           [
     "http://schema.org/",
     "https://schema.org/",
     "http://schema.org",
     "https://schema.org"
-  ],
-  vc:               ["https://www.w3.org/2018/credentials/v1"],
-  vcard:            ["http://www.w3.org/2006/vcard/ns", "https://www.w3.org/2006/vcard/ns"],
+  ].freeze,
+  vc:               ["http://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/v1"].freeze,
+  vcard:            ["http://www.w3.org/2006/vcard/ns", "https://www.w3.org/2006/vcard/ns"].freeze,
 }
 desc "Generate Contexts"
 task :gen_contexts => CONTEXTS.keys.map {|v| "lib/json/ld/preloaded/#{v}.rb"} do

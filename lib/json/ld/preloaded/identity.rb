@@ -82,5 +82,6 @@ class JSON::LD::Context
       "writePermission" => TermDefinition.new("writePermission", id: "https://w3id.org/permissions#writePermission", type_mapping: "@id"),
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
+    alias_preloaded("http://w3id.org/identity/v1", "https://w3id.org/identity/v1")
   end
 end

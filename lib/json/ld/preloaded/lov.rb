@@ -188,6 +188,7 @@ class JSON::LD::Context
       "ep" => TermDefinition.new("ep", id: "http://eprints.org/ontology/", simple: true, prefix: true),
       "eppl" => TermDefinition.new("eppl", id: "https://w3id.org/ep-plan#", simple: true, prefix: true),
       "eqp" => TermDefinition.new("eqp", id: "https://data.nasa.gov/ontologies/atmonto/equipment#", simple: true, prefix: true),
+      "esco" => TermDefinition.new("esco", id: "http://data.europa.eu/esco/model#", simple: true, prefix: true),
       "essglobal" => TermDefinition.new("essglobal", id: "http://purl.org/essglobal/vocab/", simple: true, prefix: true),
       "eupont" => TermDefinition.new("eupont", id: "http://elite.polito.it/ontologies/eupont.owl#", simple: true, prefix: true),
       "event" => TermDefinition.new("event", id: "http://purl.org/NET/c4dm/event.owl#", simple: true, prefix: true),

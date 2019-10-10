@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://www.w3.org/2018/credentials/v1
+# This file generated automatically from http://www.w3.org/2018/credentials/v1
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://www.w3.org/2018/credentials/v1") do
+  add_preloaded("http://www.w3.org/2018/credentials/v1") do
     new(processingMode: "json-ld-1.1", term_definitions: {
       "EcdsaSecp256k1Signature2019" => TermDefinition.new("EcdsaSecp256k1Signature2019", id: "https://w3id.org/security#EcdsaSecp256k1Signature2019", context: {"@version"=>1.1, "@protected"=>true, "id"=>"@id", "type"=>"@type", "sec"=>"https://w3id.org/security#", "xsd"=>"http://www.w3.org/2001/XMLSchema#", "challenge"=>"sec:challenge", "created"=>{"@id"=>"http://purl.org/dc/terms/created", "@type"=>"xsd:dateTime"}, "domain"=>"sec:domain", "expires"=>{"@id"=>"sec:expiration", "@type"=>"xsd:dateTime"}, "jws"=>"sec:jws", "nonce"=>"sec:nonce", "proofPurpose"=>{"@id"=>"sec:proofPurpose", "@type"=>"@vocab", "@context"=>{"@version"=>1.1, "@protected"=>true, "id"=>"@id", "type"=>"@type", "sec"=>"https://w3id.org/security#", "assertionMethod"=>{"@id"=>"sec:assertionMethod", "@type"=>"@id", "@container"=>"@set"}, "authentication"=>{"@id"=>"sec:authenticationMethod", "@type"=>"@id", "@container"=>"@set"}}}, "proofValue"=>"sec:proofValue", "verificationMethod"=>{"@id"=>"sec:verificationMethod", "@type"=>"@id"}}, protected: true),
       "EcdsaSecp256r1Signature2019" => TermDefinition.new("EcdsaSecp256r1Signature2019", id: "https://w3id.org/security#EcdsaSecp256r1Signature2019", context: {"@version"=>1.1, "@protected"=>true, "id"=>"@id", "type"=>"@type", "sec"=>"https://w3id.org/security#", "xsd"=>"http://www.w3.org/2001/XMLSchema#", "challenge"=>"sec:challenge", "created"=>{"@id"=>"http://purl.org/dc/terms/created", "@type"=>"xsd:dateTime"}, "domain"=>"sec:domain", "expires"=>{"@id"=>"sec:expiration", "@type"=>"xsd:dateTime"}, "jws"=>"sec:jws", "nonce"=>"sec:nonce", "proofPurpose"=>{"@id"=>"sec:proofPurpose", "@type"=>"@vocab", "@context"=>{"@version"=>1.1, "@protected"=>true, "id"=>"@id", "type"=>"@type", "sec"=>"https://w3id.org/security#", "assertionMethod"=>{"@id"=>"sec:assertionMethod", "@type"=>"@id", "@container"=>"@set"}, "authentication"=>{"@id"=>"sec:authenticationMethod", "@type"=>"@id", "@container"=>"@set"}}}, "proofValue"=>"sec:proofValue", "verificationMethod"=>{"@id"=>"sec:verificationMethod", "@type"=>"@id"}}, protected: true),
@@ -16,4 +16,5 @@ class JSON::LD::Context
       "type" => TermDefinition.new("type", id: "@type", simple: true, protected: true)
     })
   end
+  alias_preloaded("https://www.w3.org/2018/credentials/v1", "http://www.w3.org/2018/credentials/v1")
 end
