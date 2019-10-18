@@ -11,7 +11,6 @@ describe JSON::LD::Context::Preloaded do
     foaf:             "http://xmlns.com/foaf/context",
     geojson:          "http://geojson.org/geojson-ld/geojson-context.jsonld",
     hydra:            "http://www.w3.org/ns/hydra/core",
-    identity:         "https://w3id.org/identity/v1",
     iiif:             "http://iiif.io/api/image/2/context.json",
     linkedart:        "http://linked.art/ns/v1/linked-art.json",
     lov:              "http://lov.okfn.org/dataset/lov/context",
