@@ -49,33 +49,9 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
 * [CSVW Namespace Vocabulary Terms](https://www.w3.org/TR/tabular-data-model/)
  * https://www.w3.org/ns/csvw
 
-## Examples
-
-    require 'rubygems'
-    require 'json/ld/preloaded'
-    require 'rdf/turtle'
-    require 'rdf/vocab'
-
-    input = JSON.parse %({
-      "@context": "https://schema.org/",
-      "@id": "https://github.com/ruby-rdf/json-ld-preloaded",
-      "@type": "SoftwareApplication",
-      "name": "JSON-LD Preloaded",
-      "description": "A meta-release of the json-ld gem including preloaded vocabularies.",
-      "author": {
-        "@id": "https://greggkellogg.net/foaf#me",
-        "@type": "Person",
-        "name": "Gregg Kellogg"
-      }
-    })
-
-    RDF::Turtle::Writer.new(STDOUT, standard_prefixes: true) do |w|
-      w << JSON::LD::API.toRdf(input)
-    end
-
 ## Dependencies
-* [Ruby](https://ruby-lang.org/) (>= 2.2.2)
-* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 2.2)
+* [Ruby](https://ruby-lang.org/) (>= 2.4)
+* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 3.1)
 
 ## Mailing List
 * <https://lists.w3.org/Archives/Public/public-rdf-ruby/>
