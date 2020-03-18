@@ -621,6 +621,7 @@ class JSON::LD::Context
       "tag" => TermDefinition.new("tag", id: "http://www.holygoat.co.uk/owl/redwood/0.1/tags/", simple: true, prefix: true),
       "tao" => TermDefinition.new("tao", id: "http://vocab.deri.ie/tao#", simple: true, prefix: true),
       "taxon" => TermDefinition.new("taxon", id: "http://purl.org/biodiversity/taxon/", simple: true, prefix: true),
+      "td" => TermDefinition.new("td", id: "https://www.w3.org/2019/wot/td#", simple: true, prefix: true),
       "te" => TermDefinition.new("te", id: "http://www.w3.org/2006/time-entry#", simple: true, prefix: true),
       "teach" => TermDefinition.new("teach", id: "http://linkedscience.org/teach/ns#", simple: true, prefix: true),
       "test" => TermDefinition.new("test", id: "http://www.w3.org/2006/03/test-description#", simple: true, prefix: true),
