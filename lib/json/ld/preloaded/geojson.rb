@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://geojson.org/geojson-ld/geojson-context.jsonld") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "Feature" => TermDefinition.new("Feature", id: "https://purl.org/geojson/vocab#Feature", simple: true),
       "FeatureCollection" => TermDefinition.new("FeatureCollection", id: "https://purl.org/geojson/vocab#FeatureCollection", simple: true),
       "GeometryCollection" => TermDefinition.new("GeometryCollection", id: "https://purl.org/geojson/vocab#GeometryCollection", simple: true),

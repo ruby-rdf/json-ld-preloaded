@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/ns/csvw") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "Cell" => TermDefinition.new("Cell", id: "http://www.w3.org/ns/csvw#Cell", simple: true),
       "Column" => TermDefinition.new("Column", id: "http://www.w3.org/ns/csvw#Column", simple: true),
       "Datatype" => TermDefinition.new("Datatype", id: "http://www.w3.org/ns/csvw#Datatype", simple: true),

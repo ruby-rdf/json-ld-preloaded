@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "Feature" => TermDefinition.new("Feature", id: "https://purl.org/geojson/vocab#Feature", simple: true),
       "Point" => TermDefinition.new("Point", id: "https://purl.org/geojson/vocab#Point", simple: true),
       "abbr" => TermDefinition.new("abbr", id: "http://dbpedia.org/ontology/abbreviation", simple: true),

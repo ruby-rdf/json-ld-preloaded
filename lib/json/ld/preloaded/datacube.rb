@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://pebbie.org/context/qb") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "attribute" => TermDefinition.new("attribute", id: "http://purl.org/linked-data/cube#attribute", simple: true),
       "codeList" => TermDefinition.new("codeList", id: "http://purl.org/linked-data/cube#codeList", simple: true),
       "component" => TermDefinition.new("component", id: "http://purl.org/linked-data/cube#component", simple: true),

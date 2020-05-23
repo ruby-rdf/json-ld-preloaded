@@ -4,11 +4,9 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/2013/json-ld-context/rdfa11") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "as" => TermDefinition.new("as", id: "https://www.w3.org/ns/activitystreams#", simple: true, prefix: true),
-      "cat" => TermDefinition.new("cat", id: "http://www.w3.org/ns/dcat#", simple: true, prefix: true),
       "cc" => TermDefinition.new("cc", id: "http://creativecommons.org/ns#", simple: true, prefix: true),
-      "cnt" => TermDefinition.new("cnt", id: "http://www.w3.org/2008/content#", simple: true, prefix: true),
       "csvw" => TermDefinition.new("csvw", id: "http://www.w3.org/ns/csvw#", simple: true, prefix: true),
       "ctag" => TermDefinition.new("ctag", id: "http://commontag.org/ns#", simple: true, prefix: true),
       "dc" => TermDefinition.new("dc", id: "http://purl.org/dc/terms/", simple: true, prefix: true),
@@ -17,14 +15,12 @@ class JSON::LD::Context
       "dcterms" => TermDefinition.new("dcterms", id: "http://purl.org/dc/terms/", simple: true, prefix: true),
       "describedby" => TermDefinition.new("describedby", id: "http://www.w3.org/2007/05/powder-s#describedby", simple: true),
       "dqv" => TermDefinition.new("dqv", id: "http://www.w3.org/ns/dqv#", simple: true, prefix: true),
-      "duv" => TermDefinition.new("duv", id: "https://www.w3.org/TR/vocab-duv#", simple: true, prefix: true),
-      "earl" => TermDefinition.new("earl", id: "http://www.w3.org/ns/earl#", simple: true, prefix: true),
+      "duv" => TermDefinition.new("duv", id: "https://www.w3.org/ns/duv#", simple: true, prefix: true),
       "foaf" => TermDefinition.new("foaf", id: "http://xmlns.com/foaf/0.1/", simple: true, prefix: true),
-      "gldp" => TermDefinition.new("gldp", id: "http://www.w3.org/ns/people#", simple: true, prefix: true),
       "gr" => TermDefinition.new("gr", id: "http://purl.org/goodrelations/v1#", simple: true, prefix: true),
       "grddl" => TermDefinition.new("grddl", id: "http://www.w3.org/2003/g/data-view#", simple: true, prefix: true),
-      "ht" => TermDefinition.new("ht", id: "http://www.w3.org/2006/http#", simple: true, prefix: true),
       "ical" => TermDefinition.new("ical", id: "http://www.w3.org/2002/12/cal/icaltzd#", simple: true, prefix: true),
+      "jsonld" => TermDefinition.new("jsonld", id: "http://www.w3.org/ns/json-ld#", simple: true, prefix: true),
       "ldp" => TermDefinition.new("ldp", id: "http://www.w3.org/ns/ldp#", simple: true, prefix: true),
       "license" => TermDefinition.new("license", id: "http://www.w3.org/1999/xhtml/vocab#license", simple: true),
       "ma" => TermDefinition.new("ma", id: "http://www.w3.org/ns/ma-ont#", simple: true, prefix: true),
@@ -34,7 +30,6 @@ class JSON::LD::Context
       "org" => TermDefinition.new("org", id: "http://www.w3.org/ns/org#", simple: true, prefix: true),
       "owl" => TermDefinition.new("owl", id: "http://www.w3.org/2002/07/owl#", simple: true, prefix: true),
       "prov" => TermDefinition.new("prov", id: "http://www.w3.org/ns/prov#", simple: true, prefix: true),
-      "ptr" => TermDefinition.new("ptr", id: "http://www.w3.org/2009/pointers#", simple: true, prefix: true),
       "qb" => TermDefinition.new("qb", id: "http://purl.org/linked-data/cube#", simple: true, prefix: true),
       "rdf" => TermDefinition.new("rdf", id: "http://www.w3.org/1999/02/22-rdf-syntax-ns#", simple: true, prefix: true),
       "rdfa" => TermDefinition.new("rdfa", id: "http://www.w3.org/ns/rdfa#", simple: true, prefix: true),

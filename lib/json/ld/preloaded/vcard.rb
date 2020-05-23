@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/2006/vcard/ns") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "Acquaintance" => TermDefinition.new("Acquaintance", id: "http://www.w3.org/2006/vcard/ns#Acquaintance", simple: true),
       "Address" => TermDefinition.new("Address", id: "http://www.w3.org/2006/vcard/ns#Address", simple: true),
       "Agent" => TermDefinition.new("Agent", id: "http://www.w3.org/2006/vcard/ns#Agent", simple: true),
