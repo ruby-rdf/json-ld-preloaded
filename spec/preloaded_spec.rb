@@ -2,7 +2,7 @@
 $:.unshift "."
 require 'spec_helper'
 
-describe JSON::LD::Context::Preloaded do
+describe JSON::LD::Preloaded do
   {
     activitystreams:  "https://www.w3.org/ns/activitystreams",
     csvw:             "https://www.w3.org/ns/csvw",

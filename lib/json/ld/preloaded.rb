@@ -1,6 +1,6 @@
 require 'json/ld'
 
-module JSON::LD::Context::Preloaded
+module JSON::LD::Preloaded
   autoload :VERSION, "json/ld/preloaded/version"
 end
 
