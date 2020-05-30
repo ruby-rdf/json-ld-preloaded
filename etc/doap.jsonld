@@ -24,7 +24,7 @@
     },
     "@id":                "https://rubygems.org/gems/json-ld-preloaded",
     "@type":              "doap:Project",
-    "doap:name":          "JSON::LD::Context::Preloaded",
+    "doap:name":          "JSON::LD::Preloaded",
     "doap:homepage":      "https://github.com/ruby-rdf/json-ld-preloaded/",
     "doap:license":       "https://unlicense.org/1.0/",
     "doap:shortdesc":     "JSON-LD with preloaded contexts.",
