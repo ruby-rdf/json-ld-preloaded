@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/ns/hydra/core") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "ApiDocumentation" => TermDefinition.new("ApiDocumentation", id: "http://www.w3.org/ns/hydra/core#ApiDocumentation", simple: true),
       "BasicRepresentation" => TermDefinition.new("BasicRepresentation", id: "http://www.w3.org/ns/hydra/core#BasicRepresentation", simple: true),
       "Class" => TermDefinition.new("Class", id: "http://www.w3.org/ns/hydra/core#Class", simple: true),

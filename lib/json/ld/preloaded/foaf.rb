@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://xmlns.com/foaf/context") do
-    new(vocab: "http://xmlns.com/foaf/0.1/", term_definitions: {
+    new(vocab: "http://xmlns.com/foaf/0.1/", processingMode: "json-ld-1.1", term_definitions: {
       "account" => TermDefinition.new("account", id: "http://xmlns.com/foaf/0.1/account", type_mapping: "@id"),
       "accountServiceHomepage" => TermDefinition.new("accountServiceHomepage", id: "http://xmlns.com/foaf/0.1/accountServiceHomepage", type_mapping: "@id"),
       "homepage" => TermDefinition.new("homepage", id: "http://xmlns.com/foaf/0.1/homepage", type_mapping: "@id"),

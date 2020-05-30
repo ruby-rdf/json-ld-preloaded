@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.date                  = File.mtime('VERSION').strftime('%Y-%m-%d')
 
   gem.name                  = "json-ld-preloaded"
-  gem.homepage              = "http://github.com/ruby-rdf/json-ld-preloaded"
+  gem.homepage              = "https://github.com/ruby-rdf/json-ld-preloaded"
   gem.license               = 'Unlicense'
   gem.summary               = "JSON-LD with preloaded contexts."
   gem.description           = "A meta-release of the json-ld gem including preloaded vocabularies."

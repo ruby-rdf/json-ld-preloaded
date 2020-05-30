@@ -4,7 +4,7 @@
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("http://www.w3.org/ns/oa") do
-    new(term_definitions: {
+    new(processingMode: "json-ld-1.1", term_definitions: {
       "as" => TermDefinition.new("as", id: "http://www.w3.org/ns/activitystreams#", simple: true, prefix: true),
       "comment" => TermDefinition.new("comment", id: "http://www.w3.org/2000/01/rdf-schema#comment", simple: true),
       "creator" => TermDefinition.new("creator", id: "http://purl.org/dc/terms/creator", simple: true),
