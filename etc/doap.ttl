@@ -1,0 +1,30 @@
+@base         <https://rubygems.org/gems/json-ld-preloaded> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<> a doap:Project;
+   dc:creator <https://greggkellogg.net/foaf#me>;
+   doap:blog <https://greggkellogg.net/>;
+   doap:bug-database <https://github.com/ruby-rdf/json-ld-preloaded/issues>;
+   doap:created "2018-06-20"^^xsd:date;
+   doap:description "A meta-release of the json-ld gem including preloaded vocabularies."@en;
+   doap:developer <https://greggkellogg.net/foaf#me>;
+   doap:documenter <https://greggkellogg.net/foaf#me>;
+   doap:homepage <https://github.com/ruby-rdf/json-ld-preloaded/>;
+   doap:license <https://unlicense.org/1.0/>;
+   doap:maintainer <https://greggkellogg.net/foaf#me>;
+   doap:name "JSON::LD::Context::Preloaded"^^xsd:string;
+   doap:programming-language "Ruby";
+   doap:shortdesc "JSON-LD with preloaded contexts."@en;
+   foaf:maker <https://greggkellogg.net/foaf#me> .
+
+<https://greggkellogg.net/foaf#me> a foaf:Person;
+   rdfs:isDefinedBy <https://greggkellogg.net/foaf>;
+   foaf:made <>;
+   foaf:mbox <mailto:gregg@greggkellogg.net>;
+   foaf:name "Gregg Kellogg"^^xsd:string .
