@@ -66,6 +66,7 @@ class JSON::LD::Context
       "View" => TermDefinition.new("View", id: "https://www.w3.org/ns/activitystreams#View", simple: true),
       "accuracy" => TermDefinition.new("accuracy", id: "https://www.w3.org/ns/activitystreams#accuracy", type_mapping: "http://www.w3.org/2001/XMLSchema#float"),
       "actor" => TermDefinition.new("actor", id: "https://www.w3.org/ns/activitystreams#actor", type_mapping: "@id"),
+      "alsoKnownAs" => TermDefinition.new("alsoKnownAs", id: "https://www.w3.org/ns/activitystreams#alsoKnownAs", type_mapping: "@id"),
       "altitude" => TermDefinition.new("altitude", id: "https://www.w3.org/ns/activitystreams#altitude", type_mapping: "http://www.w3.org/2001/XMLSchema#float"),
       "anyOf" => TermDefinition.new("anyOf", id: "https://www.w3.org/ns/activitystreams#anyOf", type_mapping: "@id"),
       "as" => TermDefinition.new("as", id: "https://www.w3.org/ns/activitystreams#", simple: true, prefix: true),
@@ -149,6 +150,7 @@ class JSON::LD::Context
       "updated" => TermDefinition.new("updated", id: "https://www.w3.org/ns/activitystreams#updated", type_mapping: "http://www.w3.org/2001/XMLSchema#dateTime"),
       "uploadMedia" => TermDefinition.new("uploadMedia", id: "https://www.w3.org/ns/activitystreams#uploadMedia", type_mapping: "@id"),
       "url" => TermDefinition.new("url", id: "https://www.w3.org/ns/activitystreams#url", type_mapping: "@id"),
+      "vcard" => TermDefinition.new("vcard", id: "http://www.w3.org/2006/vcard/ns#", simple: true, prefix: true),
       "width" => TermDefinition.new("width", id: "https://www.w3.org/ns/activitystreams#width", type_mapping: "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
