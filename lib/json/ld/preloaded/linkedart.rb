@@ -93,6 +93,7 @@ class JSON::LD::Context
       "_label" => TermDefinition.new("_label", id: "http://www.w3.org/2000/01/rdf-schema#label"),
       "a_presence_of" => TermDefinition.new("a_presence_of", id: "http://www.cidoc-crm.org/cidoc-crm/P166_was_a_presence_of", type_mapping: "@id", container_mapping: "@set"),
       "about" => TermDefinition.new("about", id: "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", type_mapping: "@id", container_mapping: "@set"),
+      "access_point" => TermDefinition.new("access_point", id: "https://linked.art/ns/terms/access_point", type_mapping: "@id", container_mapping: "@set"),
       "acquired_custody_through" => TermDefinition.new("acquired_custody_through", id: "http://www.cidoc-crm.org/cidoc-crm/P29i_received_custody_through", type_mapping: "@id", container_mapping: "@set"),
       "acquired_title_through" => TermDefinition.new("acquired_title_through", id: "http://www.cidoc-crm.org/cidoc-crm/P22i_acquired_title_through", type_mapping: "@id", container_mapping: "@set"),
       "added" => TermDefinition.new("added", id: "http://www.cidoc-crm.org/cidoc-crm/P111_added", type_mapping: "@id", container_mapping: "@set"),
