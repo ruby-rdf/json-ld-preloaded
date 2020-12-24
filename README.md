@@ -2,7 +2,9 @@
 JSON-LD with preloaded contexts.
 
 [![Gem Version](https://badge.fury.io/rb/json-ld-preloaded.png)](https://badge.fury.io/rb/json-ld-preloaded)
-[![Build Status](https://secure.travis-ci.org/ruby-rdf/json-ld-preloaded.png?branch=master)](https://travis-ci.org/ruby-rdf/json-ld-preloaded)
+[![Build Status](https://github.com/ruby-rdf/json-ld-preloaded/workflows/CI/badge.svg?branch=develop)](https://github.com/ruby-rdf/json-ld-preloaded/actions?query=workflow%3ACI)
+[![Coverage Status](https://coveralls.io/repos/ruby-rdf/json-ld-preloaded/badge.svg)](https://coveralls.io/github/ruby-rdf/json-ld-preloaded)
+[![Gitter chat](https://badges.gitter.im/ruby-rdf/rdf.png)](https://gitter.im/ruby-rdf/rdf)
 
 ## Features
 
@@ -70,7 +72,9 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
   list in the the `README`. Alphabetical order applies.
 * Do note that in order for us to merge any non-trivial changes (as a rule
   of thumb, additions larger than about 15 lines of code), we need an
-  explicit [public domain dedication][PDD] on record from you.
+  explicit [public domain dedication][PDD] on record from you,
+  which you will be asked to agree to on the first commit to a repo within the organization.
+  Note that the agreement applies to all repos in the [Ruby RDF](https://github.com/ruby-rdf/) organization.
 
 ## License
 

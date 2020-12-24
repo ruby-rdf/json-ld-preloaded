@@ -45,6 +45,7 @@ class JSON::LD::Context
       "manages" => TermDefinition.new("manages", id: "http://www.w3.org/ns/hydra/core#manages", simple: true),
       "mapping" => TermDefinition.new("mapping", id: "http://www.w3.org/ns/hydra/core#mapping", simple: true),
       "member" => TermDefinition.new("member", id: "http://www.w3.org/ns/hydra/core#member", type_mapping: "@id"),
+      "memberAssertion" => TermDefinition.new("memberAssertion", id: "http://www.w3.org/ns/hydra/core#memberAssertion", simple: true),
       "method" => TermDefinition.new("method", id: "http://www.w3.org/ns/hydra/core#method", simple: true),
       "next" => TermDefinition.new("next", id: "http://www.w3.org/ns/hydra/core#next", type_mapping: "@id"),
       "object" => TermDefinition.new("object", id: "http://www.w3.org/ns/hydra/core#object", type_mapping: "@vocab"),
@@ -82,6 +83,7 @@ class JSON::LD::Context
       "variableRepresentation" => TermDefinition.new("variableRepresentation", id: "http://www.w3.org/ns/hydra/core#variableRepresentation", type_mapping: "@vocab"),
       "view" => TermDefinition.new("view", id: "http://www.w3.org/ns/hydra/core#view", type_mapping: "@id"),
       "vs" => TermDefinition.new("vs", id: "http://www.w3.org/2003/06/sw-vocab-status/ns#", simple: true, prefix: true),
+      "writable" => TermDefinition.new("writable", id: "http://www.w3.org/ns/hydra/core#writable", simple: true),
       "writeable" => TermDefinition.new("writeable", id: "http://www.w3.org/ns/hydra/core#writeable", simple: true),
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
