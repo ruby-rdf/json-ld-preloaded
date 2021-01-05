@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.name                  = "json-ld-preloaded"
   gem.homepage              = "https://github.com/ruby-rdf/json-ld-preloaded"
   gem.license               = 'Unlicense'
-  gem.summary               = "JSON-LD with preloaded contexts."
-  gem.description           = "A meta-release of the json-ld gem including preloaded vocabularies."
+  gem.summary               = "JSON-LD with preloaded contexts for RDF.rb."
+  gem.description           = "A meta-release of the json-ld gem including preloaded vocabularies for the Ruby RDF.rb library suite."
 
   gem.authors               = ['Gregg Kellogg']
   gem.email                 = 'public-linked-json@w3.org'
