@@ -3,7 +3,7 @@ JSON-LD with preloaded contexts.
 
 [![Gem Version](https://badge.fury.io/rb/json-ld-preloaded.png)](https://badge.fury.io/rb/json-ld-preloaded)
 [![Build Status](https://github.com/ruby-rdf/json-ld-preloaded/workflows/CI/badge.svg?branch=develop)](https://github.com/ruby-rdf/json-ld-preloaded/actions?query=workflow%3ACI)
-[![Coverage Status](https://coveralls.io/repos/ruby-rdf/json-ld-preloaded/badge.svg)](https://coveralls.io/github/ruby-rdf/json-ld-preloaded)
+[![Coverage Status](https://coveralls.io/repos/ruby-rdf/json-ld-preloaded/badge.svg?branch=develop)](https://coveralls.io/github/ruby-rdf/json-ld-preloaded?branch=develop)
 [![Gitter chat](https://badges.gitter.im/ruby-rdf/rdf.png)](https://gitter.im/ruby-rdf/rdf)
 
 ## Features

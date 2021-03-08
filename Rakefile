@@ -41,10 +41,10 @@ CONTEXTS = {
   rdfa:             ["http://www.w3.org/2013/json-ld-context/rdfa11", "https://www.w3.org/2013/json-ld-context/rdfa11"].freeze,
   research:         ["https://w3id.org/bundle/context", "https://w3id.org/bundle/context"].freeze,
   schema:           [
-    "http://schema.org/",
     "https://schema.org/",
+    "https://schema.org",
+    "http://schema.org/",
     "http://schema.org",
-    "https://schema.org"
   ].freeze,
   vc:               ["http://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/v1"].freeze,
   vcard:            ["http://www.w3.org/2006/vcard/ns", "https://www.w3.org/2006/vcard/ns"].freeze,
