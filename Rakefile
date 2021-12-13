@@ -34,7 +34,7 @@ CONTEXTS = {
   hydra:            ["http://www.w3.org/ns/hydra/core", "https://www.w3.org/ns/hydra/core"].freeze,
   iiif:             ["http://iiif.io/api/image/2/context.json", "https://iiif.io/api/image/2/context.json"].freeze,
   linkedart:        ["http://linked.art/ns/v1/linked-art.json", "https://linked.art/ns/v1/linked-art.json"].freeze,
-  lov:              ["http://lov.okfn.org/dataset/lov/context", "https://lov.okfn.org/dataset/lov/context"].freeze,
+  lov:              ["https://lov.linkeddata.es/dataset/lov/context", "http://lov.linkeddata.es/dataset/lov/context"].freeze,
   oa:               ["http://www.w3.org/ns/oa", "https://www.w3.org/ns/oa"].freeze,
   prefix:           ["http://prefix.cc/context", "https://prefix.cc/context"].freeze,
   presentation:     ["http://iiif.io/api/presentation/2/context.json", "https://iiif.io/api/presentation/2/context.json"].freeze,
