@@ -19,10 +19,10 @@ Gem::Specification.new do |gem|
   gem.require_paths         = %w(lib)
   gem.test_files            = Dir.glob('spec/**/*.rb') + Dir.glob('spec/test-files/*')
 
-  gem.required_ruby_version = '>= 2.4'
+  gem.required_ruby_version = '>= 2.6'
   gem.requirements          = []
-  gem.add_runtime_dependency     'rdf',             '~> 3.1'
-  gem.add_runtime_dependency     'json-ld',         '~> 3.1'
+  gem.add_runtime_dependency     'rdf',             '~> 3.2'
+  gem.add_runtime_dependency     'json-ld',         '~> 3.2'
   gem.add_development_dependency 'rspec',           '~> 3.10'
   gem.add_development_dependency 'yard' ,           '~> 0.9'
 

@@ -12,8 +12,8 @@ This gem uses the preloading capabilities in `JSON::LD::Context` to create ruby 
 
 Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-contexts:
 
-* [Linked Open Vocabularies (LOV)](http://lov.okfn.org/dataset/lov/)
- * http://lov.okfn.org/dataset/lov/context
+* [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
+ * http://lov.linkeddata.es/dataset/lov/context
 * [Schema.org](http://schema.org)
  * http://schema.org (needs content negotiation)
 * [Hydra](http://www.hydra-cg.com/spec/latest/core/)
@@ -52,8 +52,8 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
  * https://www.w3.org/ns/csvw
 
 ## Dependencies
-* [Ruby](https://ruby-lang.org/) (>= 2.4)
-* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 3.1)
+* [Ruby](https://ruby-lang.org/) (>= 2.6)
+* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 3.2)
 
 ## Mailing List
 * <https://lists.w3.org/Archives/Public/public-rdf-ruby/>
