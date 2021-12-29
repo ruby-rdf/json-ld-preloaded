@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from http://lov.okfn.org/dataset/lov/context
+# This file generated automatically from https://lov.linkeddata.es/dataset/lov/context
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("http://lov.okfn.org/dataset/lov/context") do
+  add_preloaded("https://lov.linkeddata.es/dataset/lov/context") do
     new(processingMode: "json-ld-1.1", term_definitions: {
       "SAN" => TermDefinition.new("SAN", id: "http://www.irit.fr/recherches/MELODI/ontologies/SAN#", simple: true, prefix: true),
       "a-loc" => TermDefinition.new("a-loc", id: "https://w3id.org/arco/ontology/location/", simple: true, prefix: true),
@@ -43,6 +43,7 @@ class JSON::LD::Context
       "bbccore" => TermDefinition.new("bbccore", id: "http://www.bbc.co.uk/ontologies/coreconcepts/", simple: true, prefix: true),
       "bbcprov" => TermDefinition.new("bbcprov", id: "http://www.bbc.co.uk/ontologies/provenance/", simple: true, prefix: true),
       "bci" => TermDefinition.new("bci", id: "https://w3id.org/BCI-ontology#", simple: true, prefix: true),
+      "bcom" => TermDefinition.new("bcom", id: "https://w3id.org/bcom#", simple: true, prefix: true),
       "being" => TermDefinition.new("being", id: "http://contextus.net/ontology/ontomedia/ext/common/being#", simple: true, prefix: true),
       "bevon" => TermDefinition.new("bevon", id: "http://rdfs.co/bevon/", simple: true, prefix: true),
       "bf" => TermDefinition.new("bf", id: "http://id.loc.gov/ontologies/bibframe/", simple: true, prefix: true),
@@ -68,6 +69,7 @@ class JSON::LD::Context
       "caresses" => TermDefinition.new("caresses", id: "http://caressesrobot.org/ontology#", simple: true, prefix: true),
       "cart" => TermDefinition.new("cart", id: "http://purl.org/net/cartCoord#", simple: true, prefix: true),
       "caso" => TermDefinition.new("caso", id: "http://www.w3id.org/def/caso#", simple: true, prefix: true),
+      "cbcm" => TermDefinition.new("cbcm", id: "http://w3id.org/um/cbcm/eu-cm-ontology#", simple: true, prefix: true),
       "cbo" => TermDefinition.new("cbo", id: "http://comicmeta.org/cbo/", simple: true, prefix: true),
       "cbs" => TermDefinition.new("cbs", id: "http://betalinkeddata.cbs.nl/def/cbs#", simple: true, prefix: true),
       "cc" => TermDefinition.new("cc", id: "http://creativecommons.org/ns#", simple: true, prefix: true),
@@ -145,6 +147,7 @@ class JSON::LD::Context
       "dce" => TermDefinition.new("dce", id: "http://purl.org/dc/elements/1.1/", simple: true, prefix: true),
       "dcite" => TermDefinition.new("dcite", id: "http://purl.org/spar/datacite/", simple: true, prefix: true),
       "dcndl" => TermDefinition.new("dcndl", id: "http://ndl.go.jp/dcndl/terms/", simple: true, prefix: true),
+      "dco" => TermDefinition.new("dco", id: "https://w3id.org/dco#", simple: true, prefix: true),
       "dcterms" => TermDefinition.new("dcterms", id: "http://purl.org/dc/terms/", simple: true, prefix: true),
       "dctype" => TermDefinition.new("dctype", id: "http://purl.org/dc/dcmitype/", simple: true, prefix: true),
       "ddesc" => TermDefinition.new("ddesc", id: "https://w3id.org/arco/ontology/denotative-description/", simple: true, prefix: true),
@@ -274,6 +277,7 @@ class JSON::LD::Context
       "gsp" => TermDefinition.new("gsp", id: "http://www.opengis.net/ont/geosparql#", simple: true, prefix: true),
       "gtfs" => TermDefinition.new("gtfs", id: "http://vocab.gtfs.org/terms#", simple: true, prefix: true),
       "gts" => TermDefinition.new("gts", id: "http://resource.geosciml.org/ontology/timescale/gts#", simple: true, prefix: true),
+      "gufo" => TermDefinition.new("gufo", id: "http://purl.org/nemo/gufo#", simple: true, prefix: true),
       "gvp" => TermDefinition.new("gvp", id: "http://vocab.getty.edu/ontology#", simple: true, prefix: true),
       "h2o" => TermDefinition.new("h2o", id: "http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#", simple: true, prefix: true),
       "ha" => TermDefinition.new("ha", id: "http://sensormeasurement.appspot.com/ont/home/homeActivity#", simple: true, prefix: true),
@@ -326,6 +330,7 @@ class JSON::LD::Context
       "km4c" => TermDefinition.new("km4c", id: "http://www.disit.org/km4city/schema#", simple: true, prefix: true),
       "label" => TermDefinition.new("label", id: "http://purl.org/net/vocab/2004/03/label#", simple: true, prefix: true),
       "lawd" => TermDefinition.new("lawd", id: "http://lawd.info/ontology/", simple: true, prefix: true),
+      "lc" => TermDefinition.new("lc", id: "http://semweb.mmlab.be/ns/linkedconnections#", simple: true, prefix: true),
       "lcy" => TermDefinition.new("lcy", id: "http://purl.org/vocab/lifecycle/schema#", simple: true, prefix: true),
       "ldp" => TermDefinition.new("ldp", id: "http://www.w3.org/ns/ldp#", simple: true, prefix: true),
       "ldr" => TermDefinition.new("ldr", id: "http://purl.oclc.org/NET/ldr/ns#", simple: true, prefix: true),
@@ -557,6 +562,7 @@ class JSON::LD::Context
       "rdfg" => TermDefinition.new("rdfg", id: "http://www.w3.org/2004/03/trix/rdfg-1/", simple: true, prefix: true),
       "rdfp" => TermDefinition.new("rdfp", id: "https://w3id.org/rdfp/", simple: true, prefix: true),
       "rdfs" => TermDefinition.new("rdfs", id: "http://www.w3.org/2000/01/rdf-schema#", simple: true, prefix: true),
+      "rdft" => TermDefinition.new("rdft", id: "http://www.w3.org/ns/rdftest#", simple: true, prefix: true),
       "rec" => TermDefinition.new("rec", id: "http://purl.org/ontology/rec/core#", simple: true, prefix: true),
       "rec54" => TermDefinition.new("rec54", id: "http://www.w3.org/2001/02pd/rec54#", simple: true, prefix: true),
       "reco" => TermDefinition.new("reco", id: "http://purl.org/reco#", simple: true, prefix: true),
@@ -675,6 +681,12 @@ class JSON::LD::Context
       "taxon" => TermDefinition.new("taxon", id: "http://purl.org/biodiversity/taxon/", simple: true, prefix: true),
       "tb" => TermDefinition.new("tb", id: "https://w3id.org/timebank#", simple: true, prefix: true),
       "td" => TermDefinition.new("td", id: "https://www.w3.org/2019/wot/td#", simple: true, prefix: true),
+      "tddfa" => TermDefinition.new("tddfa", id: "https://w3id.org/todo/tododfa#", simple: true, prefix: true),
+      "tddial" => TermDefinition.new("tddial", id: "https://w3id.org/todo/tododial#", simple: true, prefix: true),
+      "tddm" => TermDefinition.new("tddm", id: "https://w3id.org/todo/tododm#", simple: true, prefix: true),
+      "tddom" => TermDefinition.new("tddom", id: "https://w3id.org/todo/tododom#", simple: true, prefix: true),
+      "tddt" => TermDefinition.new("tddt", id: "https://w3id.org/todo/tododt#", simple: true, prefix: true),
+      "tddw" => TermDefinition.new("tddw", id: "https://w3id.org/todo/tododw#", simple: true, prefix: true),
       "te" => TermDefinition.new("te", id: "http://www.w3.org/2006/time-entry#", simple: true, prefix: true),
       "teach" => TermDefinition.new("teach", id: "http://linkedscience.org/teach/ns#", simple: true, prefix: true),
       "test" => TermDefinition.new("test", id: "http://www.w3.org/2006/03/test-description#", simple: true, prefix: true),
@@ -690,6 +702,7 @@ class JSON::LD::Context
       "tm" => TermDefinition.new("tm", id: "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#", simple: true, prefix: true),
       "tmo" => TermDefinition.new("tmo", id: "http://www.w3.org/2001/sw/hcls/ns/transmed/", simple: true, prefix: true),
       "toco" => TermDefinition.new("toco", id: "http://purl.org/toco/", simple: true, prefix: true),
+      "todo" => TermDefinition.new("todo", id: "https://w3id.org/todo#", simple: true, prefix: true),
       "topo" => TermDefinition.new("topo", id: "http://data.ign.fr/def/topo#", simple: true, prefix: true),
       "tp" => TermDefinition.new("tp", id: "http://tour-pedia.org/download/tp.owl#", simple: true, prefix: true),
       "traffic" => TermDefinition.new("traffic", id: "http://www.sensormeasurement.appspot.com/ont/transport/traffic#", simple: true, prefix: true),
@@ -750,6 +763,7 @@ class JSON::LD::Context
       "whisky" => TermDefinition.new("whisky", id: "http://vocab.org/whisky/terms/", simple: true, prefix: true),
       "whois" => TermDefinition.new("whois", id: "http://www.kanzaki.com/ns/whois#", simple: true, prefix: true),
       "wi" => TermDefinition.new("wi", id: "http://purl.org/ontology/wi/core#", simple: true, prefix: true),
+      "wikibase" => TermDefinition.new("wikibase", id: "http://wikiba.se/ontology#", simple: true, prefix: true),
       "wikim" => TermDefinition.new("wikim", id: "http://spi-fm.uca.es/spdef/models/genericTools/wikim/1.0#", simple: true, prefix: true),
       "wl" => TermDefinition.new("wl", id: "http://www.wsmo.org/ns/wsmo-lite#", simple: true, prefix: true),
       "wlo" => TermDefinition.new("wlo", id: "http://purl.org/ontology/wo/", simple: true, prefix: true),
@@ -765,5 +779,5 @@ class JSON::LD::Context
       "zbwext" => TermDefinition.new("zbwext", id: "http://zbw.eu/namespaces/zbw-extensions/", simple: true, prefix: true)
     })
   end
-  alias_preloaded("https://lov.okfn.org/dataset/lov/context", "http://lov.okfn.org/dataset/lov/context")
+  alias_preloaded("http://lov.linkeddata.es/dataset/lov/context", "https://lov.linkeddata.es/dataset/lov/context")
 end

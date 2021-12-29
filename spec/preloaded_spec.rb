@@ -13,7 +13,7 @@ describe JSON::LD::Preloaded do
     hydra:            "http://www.w3.org/ns/hydra/core",
     iiif:             "http://iiif.io/api/image/2/context.json",
     linkedart:        "http://linked.art/ns/v1/linked-art.json",
-    lov:              "http://lov.okfn.org/dataset/lov/context",
+    lov:              "http://lov.linkeddata.es/dataset/lov/context",
     oa:               "http://www.w3.org/ns/oa",
     prefix:           "http://prefix.cc/context",
     presentation:     "http://iiif.io/api/presentation/2/context.json",
