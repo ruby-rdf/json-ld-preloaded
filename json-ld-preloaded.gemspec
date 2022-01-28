@@ -10,6 +10,13 @@ Gem::Specification.new do |gem|
   gem.license               = 'Unlicense'
   gem.summary               = "JSON-LD with preloaded contexts for RDF.rb."
   gem.description           = "A meta-release of the json-ld gem including preloaded vocabularies for the Ruby RDF.rb library suite."
+  gem.metadata           = {
+    "documentation_uri" => "https://ruby-rdf.github.io/json-ld-preloaded",
+    "bug_tracker_uri"   => "https://github.com/ruby-rdf/json-ld-preloaded/issues",
+    "homepage_uri"      => "https://github.com/ruby-rdf/json-ld-preloaded",
+    "mailing_list_uri"  => "https://lists.w3.org/Archives/Public/public-rdf-ruby/",
+    "source_code_uri"   => "https://github.com/ruby-rdf/json-ld-preloaded",
+  }
 
   gem.authors               = ['Gregg Kellogg']
   gem.email                 = 'public-linked-json@w3.org'
