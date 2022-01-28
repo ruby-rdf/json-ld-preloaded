@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; JSON-LD with preloaded contexts.
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="label-JSON-LD+Preloaded">JSON-LD Preloaded</h1>
+
+<p>JSON-LD with preloaded contexts.</p>
+
+<p><a href="https://badge.fury.io/rb/json-ld-preloaded"><img src="https://badge.fury.io/rb/json-ld-preloaded.png"></a> <a href="https://github.com/ruby-rdf/json-ld-preloaded/actions?query=workflow%3ACI"><img src="https://github.com/ruby-rdf/json-ld-preloaded/workflows/CI/badge.svg?branch=develop"></a> <a href="https://coveralls.io/github/ruby-rdf/json-ld-preloaded?branch=develop"><img src="https://coveralls.io/repos/ruby-rdf/json-ld-preloaded/badge.svg?branch=develop"></a> <a href="https://gitter.im/ruby-rdf/rdf"><img src="https://badges.gitter.im/ruby-rdf/rdf.png"></a></p>
+
+<h2 id="label-Features">Features</h2>
+
+<p>This gem uses the preloading capabilities in <code>JSON::LD::Context</code> to create ruby context definitions for common JSON-LD contexts to dramatically reduce processing time when any preloaded context is used in a JSON-LD document. As a consequence, changes made to these contexts after the gem release will not be loaded.</p>
+
+<p>Contexts are taken from <a href="https://github.com/json-ld/json-ld.org/wiki/existing-contexts">github.com/json-ld/json-ld.org/wiki/existing-contexts</a>:</p>
+<ul><li>
+<p><a href="https://lov.linkeddata.es/dataset/lov/">Linked Open Vocabularies (LOV)</a></p>
+</li><li>
+<p><a href="http://lov.linkeddata.es/dataset/lov/context">lov.linkeddata.es/dataset/lov/context</a></p>
+</li><li>
+<p><a href="http://schema.org">Schema.org</a></p>
+</li><li>
+<p><a href="http://schema.org">schema.org</a> (needs content negotiation)</p>
+</li><li>
+<p><a href="http://www.hydra-cg.com/spec/latest/core/">Hydra</a></p>
+</li><li>
+<p><a href="http://www.w3.org/ns/hydra/core">www.w3.org/ns/hydra/core</a></p>
+</li><li>
+<p><a href="http://www.w3.org/2012/ldp/wiki/Main_Page">LDP</a></p>
+</li><li>
+<p><a href="http://lists.w3.org/Archives/Public/public-linked-json/2014Jul/0050.html">work in progress</a></p>
+</li><li>
+<p><a href="http://activitystrea.ms">ActivityStreams 2.0</a></p>
+</li><li>
+<p><a href="http://asjsonld.mybluemix.net">asjsonld.mybluemix.net</a>/</p>
+</li><li>
+<p>Open Badges (OBI)</p>
+</li><li>
+<p><a href="https://openbadgespec.org/v1/context.json">openbadgespec.org/v1/context.json</a></p>
+</li><li>
+<p>issues: <a href="https://github.com/openbadges/openbadges-specification/issues">github.com/openbadges/openbadges-specification/issues</a></p>
+</li><li>
+<p><a href="http://www.w3.org/TR/vcard-rdf/">vCard Ontology</a></p>
+</li><li>
+<p><a href="http://www.w3.org/2006/vcard/ns">www.w3.org/2006/vcard/ns</a> (needs content negotiation)</p>
+</li><li>
+<p><a href="http://xmlns.com/foaf/spec/">FOAF</a></p>
+</li><li>
+<p><a href="http://xmlns.com/foaf/context">xmlns.com/foaf/context</a></p>
+</li><li>
+<p><a href="https://github.com/geojson/geojson-ld">GeoJSON-LD</a></p>
+</li><li>
+<p><a href="https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld">raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld</a></p>
+</li><li>
+<p><a href="http://iiif.io/api/image/2/">IIIF Image API</a></p>
+</li><li>
+<p><a href="http://iiif.io/api/image/2/context.json">iiif.io/api/image/2/context.json</a></p>
+</li><li>
+<p><a href="http://iiif.io/api/presentation/2/">IIIF Presentation API</a></p>
+</li><li>
+<p><a href="http://iiif.io/api/presentation/2/context.json">iiif.io/api/presentation/2/context.json</a></p>
+</li><li>
+<p><a href="http://www.w3.org/2011/rdfa-context/rdfa-1.1">RDFa Core Initial Context</a></p>
+</li><li>
+<p><a href="http://www.w3.org/2013/json-ld-context/rdfa11">www.w3.org/2013/json-ld-context/rdfa11</a></p>
+</li><li>
+<p><a href="https://web-payments.org/">Web Payments</a></p>
+</li><li>
+<p>multiple, see specs</p>
+</li><li>
+<p><a href="https://github.com/digitalbazaar/jsonld.js/issues/39">package.json</a></p>
+</li><li>
+<p><a href="https://w3id.org/bundle">Research Object Bundle</a></p>
+</li><li>
+<p><a href="https://w3id.org/bundle/context">w3id.org/bundle/context</a></p>
+</li><li>
+<p><a href="http://prefix.cc">prefix.cc</a></p>
+</li><li>
+<p><a href="http://prefix.cc/context">prefix.cc/context</a> (and subsets using URLs of the form <a href="http://prefix.cc/foaf,rdf,rdfs.file.jsonld">prefix.cc/foaf,rdf,rdfs.file.jsonld</a>)</p>
+</li><li>
+<p>CultureGraph EntityFacts</p>
+</li><li>
+<p><a href="http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld">hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld</a></p>
+</li><li>
+<p><a href="http://purl.org/linked-data/cube#">RDF Data Cube</a></p>
+</li><li>
+<p><a href="http://pebbie.org/context/qb">pebbie.org/context/qb</a></p>
+</li><li>
+<p><a href="https://www.w3.org/TR/tabular-data-model/">CSVW Namespace Vocabulary Terms</a></p>
+</li><li>
+<p><a href="https://www.w3.org/ns/csvw">www.w3.org/ns/csvw</a></p>
+</li></ul>
+
+<h2 id="label-Dependencies">Dependencies</h2>
+<ul><li>
+<p><a href="https://ruby-lang.org/">Ruby</a> (&gt;= 2.6)</p>
+</li><li>
+<p><a href="https://rubygems.org/gems/json-ld">JSON::LD</a> (&gt;= 3.2)</p>
+</li></ul>
+
+<h2 id="label-Mailing+List">Mailing List</h2>
+<ul><li>
+<p><a href="https://lists.w3.org/Archives/Public/public-rdf-ruby">lists.w3.org/Archives/Public/public-rdf-ruby</a>/</p>
+</li></ul>
+
+<h2 id="label-Author">Author</h2>
+<ul><li>
+<p><a href="https://github.com/gkellogg">Gregg Kellogg</a> - <a href="https://greggkellogg.net">greggkellogg.net</a>/</p>
+</li></ul>
+
+<h2 id="label-Contributing">Contributing</h2>
+<ul><li>
+<p>Do your best to adhere to the existing coding conventions and idioms.</p>
+</li><li>
+<p>Don’t use hard tabs, and don’t leave trailing whitespace on any line.</p>
+</li><li>
+<p>Do document every method you add using <a href="https://yardoc.org/">YARD</a> annotations. Read the  <a href="https://rubydoc.info/docs/yard/file/docs/GettingStarted.md">tutorial</a> or just look at the existing code for examples.</p>
+</li><li>
+<p>Don’t touch the <code>json-ld.gemspec</code>, <code>VERSION</code> or <code>AUTHORS</code> files. If you need to  change them, do so on your private branch only.</p>
+</li><li>
+<p>Do feel free to add yourself to the <code>CREDITS</code> file and the corresponding  list in the the <code>README</code>. Alphabetical order applies.</p>
+</li><li>
+<p>Do note that in order for us to merge any non-trivial changes (as a rule  of thumb, additions larger than about 15 lines of code), we need an  explicit <a href="https://lists.w3.org/Archives/Public/public-rdf-ruby/2010May/0013.html">public domain dedication</a> on record from you,  which you will be asked to agree to on the first commit to a repo within the organization.  Note that the agreement applies to all repos in the <a href="https://github.com/ruby-rdf/">Ruby RDF</a> organization.</p>
+</li></ul>
+
+<h2 id="label-License">License</h2>
+
+<p>This is free and unencumbered public domain software. For more information, see <a href="https://unlicense.org">unlicense.org</a>/ or the accompanying <a href="file.UNLICENSE.html" title="UNLICENSE">UNLICENSE</a> file.</p>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Jan 28 00:12:51 2022 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.27 (ruby-3.1.0).
+</div>
+
+    </div>
+  </body>
+</html>
