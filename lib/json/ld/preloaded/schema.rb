@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://schema.org/
+# This file generated automatically from http://schema.org/
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://schema.org/") do
+  add_preloaded("http://schema.org/") do
     new(vocab: "http://schema.org/", processingMode: "json-ld-1.1", term_definitions: {
       "3DModel" => TermDefinition.new("3DModel", id: "http://schema.org/3DModel"),
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
@@ -2851,7 +2851,7 @@ class JSON::LD::Context
       "yield" => TermDefinition.new("yield", id: "http://schema.org/yield")
     })
   end
-  alias_preloaded("https://schema.org", "https://schema.org/")
-  alias_preloaded("http://schema.org/", "https://schema.org/")
-  alias_preloaded("http://schema.org", "https://schema.org/")
+  alias_preloaded("https://schema.org", "http://schema.org/")
+  alias_preloaded("http://schema.org/", "http://schema.org/")
+  alias_preloaded("http://schema.org", "http://schema.org/")
 end
