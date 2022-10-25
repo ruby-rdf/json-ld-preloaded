@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://lov.linkeddata.es/dataset/lov/context
+# This file generated automatically from http://lov.linkeddata.es/dataset/lov/context
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://lov.linkeddata.es/dataset/lov/context") do
+  add_preloaded("http://lov.linkeddata.es/dataset/lov/context") do
     new(processingMode: "json-ld-1.1", term_definitions: {
       "SAN" => TermDefinition.new("SAN", id: "http://www.irit.fr/recherches/MELODI/ontologies/SAN#", simple: true, prefix: true),
       "a-loc" => TermDefinition.new("a-loc", id: "https://w3id.org/arco/ontology/location/", simple: true, prefix: true),
@@ -797,5 +797,5 @@ class JSON::LD::Context
       "zbwext" => TermDefinition.new("zbwext", id: "http://zbw.eu/namespaces/zbw-extensions/", simple: true, prefix: true)
     })
   end
-  alias_preloaded("http://lov.linkeddata.es/dataset/lov/context", "https://lov.linkeddata.es/dataset/lov/context")
+  alias_preloaded("http://lov.linkeddata.es/dataset/lov/context", "http://lov.linkeddata.es/dataset/lov/context")
 end
