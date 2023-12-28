@@ -55,6 +55,10 @@ Contexts are taken from https://github.com/json-ld/json-ld.org/wiki/existing-con
 * [Ruby](https://ruby-lang.org/) (>= 2.6)
 * [JSON::LD](https://rubygems.org/gems/json-ld) (>= 3.2)
 
+## Change Log
+
+See [Release Notes on GitHub](https://github.com/ruby-rdf/json-ld-preloaded/releases)
+
 ## Mailing List
 * <https://lists.w3.org/Archives/Public/public-rdf-ruby/>
 
