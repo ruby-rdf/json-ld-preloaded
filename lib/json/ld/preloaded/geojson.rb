@@ -24,5 +24,4 @@ class JSON::LD::Context
       "type" => TermDefinition.new("type", id: "@type", simple: true)
     })
   end
-  alias_preloaded("https://geojson.org/geojson-ld/geojson-context.jsonld", "http://geojson.org/geojson-ld/geojson-context.jsonld")
 end

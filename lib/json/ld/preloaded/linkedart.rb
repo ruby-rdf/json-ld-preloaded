@@ -450,5 +450,4 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
-  alias_preloaded("https://linked.art/ns/v1/linked-art.json", "http://linked.art/ns/v1/linked-art.json")
 end

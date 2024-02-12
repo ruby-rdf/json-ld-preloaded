@@ -17,6 +17,7 @@ class JSON::LD::Context
       "attributionRequired" => TermDefinition.new("attributionRequired", id: "https://d-nb.info/standards/elementset/dnb#attributionRequired", simple: true),
       "biographicalOrHistoricalInformation" => TermDefinition.new("biographicalOrHistoricalInformation", id: "https://d-nb.info/standards/elementset/gnd#biographicalOrHistoricalInformation", language_mapping: "de"),
       "collection" => TermDefinition.new("collection", id: "https://d-nb.info/standards/elementset/dnb#isDescribedIn", simple: true),
+      "completeName" => TermDefinition.new("completeName", id: "https://d-nb.info/standards/elementset/gnd#FullerFormOfNameOfThePerson", simple: true),
       "coordinates" => TermDefinition.new("coordinates", id: "https://purl.org/geojson/vocab#coordinates", container_mapping: "@list"),
       "copyrighted" => TermDefinition.new("copyrighted", id: "https://d-nb.info/standards/elementset/dnb#copyrighted", simple: true),
       "creator" => TermDefinition.new("creator", id: "http://purl.org/dc/elements/1.1/creator", simple: true),
@@ -32,6 +33,7 @@ class JSON::LD::Context
       "depiction" => TermDefinition.new("depiction", id: "http://xmlns.com/foaf/0.1/depiction", simple: true),
       "describedBy" => TermDefinition.new("describedBy", id: "http://www.w3.org/2007/05/powder-s#describedby", simple: true),
       "description" => TermDefinition.new("description", id: "http://purl.org/dc/terms/description", simple: true),
+      "earlierName" => TermDefinition.new("earlierName", id: "https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson", simple: true),
       "event" => TermDefinition.new("event", id: "https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent", simple: true),
       "familialRelationship" => TermDefinition.new("familialRelationship", id: "https://d-nb.info/standards/elementset/gnd#familialRelationship", simple: true),
       "family" => TermDefinition.new("family", id: "https://d-nb.info/standards/elementset/gnd#Family", simple: true),
@@ -46,6 +48,7 @@ class JSON::LD::Context
       "isA" => TermDefinition.new("isA", id: "https://d-nb.info/standards/elementset/gnd#broaderTermInstantial", simple: true),
       "isPartOf" => TermDefinition.new("isPartOf", id: "https://d-nb.info/standards/elementset/gnd#hierarchicalSuperior", simple: true),
       "label" => TermDefinition.new("label", id: "http://www.w3.org/2000/01/rdf-schema#label", language_mapping: "de"),
+      "laterName" => TermDefinition.new("laterName", id: "https://d-nb.info/standards/elementset/gnd#LaterNameOfThePerson", simple: true),
       "license" => TermDefinition.new("license", id: "http://purl.org/dc/terms/license", type_mapping: "@id"),
       "location" => TermDefinition.new("location", id: "http://purl.org/dc/terms/spatial", simple: true),
       "name" => TermDefinition.new("name", id: "http://xmlns.com/foaf/0.1/name", simple: true),
@@ -86,5 +89,4 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
-  alias_preloaded("https://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld", "http://hub.culturegraph.org/entityfacts/context/v1/entityfacts.jsonld")
 end
