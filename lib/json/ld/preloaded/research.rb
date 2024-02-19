@@ -3,7 +3,7 @@
 # This file generated automatically from https://w3id.org/bundle/context
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://w3id.org/bundle/context") do
+  add_preloaded("http://w3id.org/bundle/context") do
     new(processingMode: "json-ld-1.1", term_definitions: {
       "about" => TermDefinition.new("about", id: "http://www.w3.org/ns/oa#hasTarget", type_mapping: "@id"),
       "aggregatedBy" => TermDefinition.new("aggregatedBy", id: "http://purl.org/pav/createdBy", type_mapping: "@id"),
@@ -52,5 +52,4 @@ class JSON::LD::Context
       "xsd" => TermDefinition.new("xsd", id: "http://www.w3.org/2001/XMLSchema#", simple: true, prefix: true)
     })
   end
-  alias_preloaded("https://w3id.org/bundle/context", "https://w3id.org/bundle/context")
 end
