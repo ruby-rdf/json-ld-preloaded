@@ -16,5 +16,4 @@ class JSON::LD::Context
       "type" => TermDefinition.new("type", id: "@type", simple: true, protected: true)
     })
   end
-  alias_preloaded("https://www.w3.org/2018/credentials/v1", "http://www.w3.org/2018/credentials/v1")
 end

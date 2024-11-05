@@ -3,7 +3,7 @@
 # This file generated automatically from https://w3id.org/openbadges/legacy-v1
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://w3id.org/openbadges/legacy-v1") do
+  add_preloaded("http://w3id.org/openbadges/legacy-v1") do
     new(term_definitions: {
       "Assertion" => TermDefinition.new("Assertion", id: "https://w3id.org/openbadges#Assertion", simple: true),
       "Badge" => TermDefinition.new("Badge", id: "https://w3id.org/openbadges#Badge", simple: true),

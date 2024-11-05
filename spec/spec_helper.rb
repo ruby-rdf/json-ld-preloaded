@@ -4,4 +4,6 @@ $:.unshift File.dirname(__FILE__)
 require "bundler/setup"
 require 'rspec'
 
+require 'webmock/rspec'
+
 require 'json/ld/preloaded'
