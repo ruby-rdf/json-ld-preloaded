@@ -13,7 +13,7 @@ class JSON::LD::Context
       "controller" => TermDefinition.new("controller", id: "https://w3id.org/security#controller", type_mapping: "@id", protected: true),
       "id" => TermDefinition.new("id", id: "@id", simple: true, protected: true),
       "keyAgreement" => TermDefinition.new("keyAgreement", id: "https://w3id.org/security#keyAgreementMethod", type_mapping: "@id", container_mapping: "@set", protected: true),
-      "service" => TermDefinition.new("service", id: "https://www.w3.org/ns/did#service", type_mapping: "@id", context: {"@protected"=>true, "id"=>"@id", "type"=>"@type", "serviceEndpoint"=>{"@id"=>"https://www.w3.org/ns/did#serviceEndpoint", "@type"=>"@id"}}, protected: true),
+      "service" => TermDefinition.new("service", id: "https://www.w3.org/ns/did#service", type_mapping: "@id", context: {"@protected" => true, "id" => "@id", "type" => "@type", "serviceEndpoint" => {"@id" => "https://www.w3.org/ns/did#serviceEndpoint", "@type" => "@id"}}, protected: true),
       "type" => TermDefinition.new("type", id: "@type", simple: true, protected: true),
       "verificationMethod" => TermDefinition.new("verificationMethod", id: "https://w3id.org/security#verificationMethod", type_mapping: "@id", protected: true)
     })
