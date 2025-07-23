@@ -178,5 +178,4 @@ class JSON::LD::Context
       "yearMonthDuration" => TermDefinition.new("yearMonthDuration", id: "http://www.w3.org/2001/XMLSchema#yearMonthDuration", simple: true)
     })
   end
-  alias_preloaded("https://www.w3.org/ns/csvw", "http://www.w3.org/ns/csvw")
 end
